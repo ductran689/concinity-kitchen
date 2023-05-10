@@ -6,10 +6,10 @@ import Carousel from './Carousel';
 
 export default function Layout({ title, children }) {
   const images = [
-    'https://placehold.co/480x300?font=roboto&text=Slide+1',
-    'https://placehold.co/480x300?font=roboto&text=Slide+2',
-    'https://placehold.co/480x300?font=roboto&text=Slide+3',
-    'https://placehold.co/480x300?font=roboto&text=Slide+4',
+    '/images/cabinet_1.jpg',
+    '/images/cabinet_2.jpg',
+    '/images/kitchen_1.jpg',
+    '/images/kitchen_3.jpg',
   ];
   return (
     <>
@@ -34,6 +34,7 @@ export default function Layout({ title, children }) {
           </nav>
         </header>
         <main className=" container m-auto mt-4 px-4">
+          {children}
           <div className="carousel lg:w-3/4 mx-auto my-2">
             <Carousel loop>
               {images.map((src, i) => {
@@ -46,7 +47,12 @@ export default function Layout({ title, children }) {
                   //   - we want this slide to not be able to grow or shrink and take up 100% width of the viewport.
                   <div className="relative h-64 flex-[0_0_100%]" key={i}>
                     {/* use object-cover + fill since we don't know the height and width of the parent */}
-                    <Image src={src} fill className="object-cover" alt="alt" />
+                    <Image
+                      src={src}
+                      fill
+                      className="object-cover"
+                      alt={`${i}`}
+                    />
                   </div>
                 );
               })}
