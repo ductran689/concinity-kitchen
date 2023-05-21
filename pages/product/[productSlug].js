@@ -8,8 +8,8 @@ import Image from 'next/image';
 export default function ProductScreen() {
   const { query } = useRouter();
   console.log({ query });
-  const { slug } = query;
-  const product = data.products.find((x) => x.slug === slug);
+  const { productSlug } = query;
+  const product = data.products.find((x) => x.slug === productSlug);
   if (!product) {
     return <div>Product Not Found</div>;
   }

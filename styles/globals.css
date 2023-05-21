@@ -34,3 +34,6 @@ body {
 .primary-button {
   @apply rounded bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400 active:bg-amber-500;
 }
+.h1-primary {
+  @apply text-[40px] text-center;
+}
