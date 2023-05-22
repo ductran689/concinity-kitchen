@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout';
-import data from '../utils/data';
+/* import data from '../utils/data'; */
 import Carousel from '../components/Carousel';
-import ProductItem from '../components/ProductItem';
+/* import ProductItem from '../components/ProductItem'; */
 import Image from 'next/image';
 import Services from '../components/Services';
 import About from '../components/About';

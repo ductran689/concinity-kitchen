@@ -1,4 +1,4 @@
-import { createContext, useReducer } from 'react';
+/* import { createContext, useReducer } from 'react';
 
 export const Store = createContext();
 
@@ -23,3 +23,4 @@ function reducer(state, action) {
     }
   }
 }
+ */
