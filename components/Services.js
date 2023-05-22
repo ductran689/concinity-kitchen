@@ -6,11 +6,6 @@ import Link from 'next/link';
 export default function Services() {
   return (
     <div className="services relative">
-      <Image
-        src="/public/images/kitchen_1"
-        alt="background image"
-        fill={true}
-      />
       <h1 className="h1-primary">OUR SERVICVE</h1>
       <p>
         Perfect Kitchens provide a full range of services covering everything
@@ -21,10 +16,10 @@ export default function Services() {
       <div className=" grid mt-4 gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:justify-self-center lg:justify-items-center ">
         {data.services.map((service, i) => (
           <div
-            className="service_card w-[90%] border-solid border-transparent border-b-lime-500 border-2 bg-white  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative "
+            className="service_card w-[90%] border-solid border-transparent border-b-lime-500 border-2 bg-white  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative hover:overflow-hidden  overflow-hidden"
             key={i}
           >
-            <div className="image_container relative w-full lg:min-h-[300px] md:min-h[250] min-h-[250px]">
+            <div className="image_container relative w-full lg:min-h-[300px] md:min-h[250] min-h-[250px] hover:scale-105  ease-in duration-100 overflow-hidden">
               <Link href={`/services/${service.slug}`}>
                 <Image
                   className="rounded-t-lg"

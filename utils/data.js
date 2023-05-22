@@ -76,7 +76,7 @@ const data = {
       name: 'Custom Joinery',
       slug: 'custom-joinery',
       key: Math.random(),
-      image: '/images/kitchen_7.jpg',
+      image: '/images/Kitchen_7.jpg',
       content:
         'Perfect Kitchens’ specialist cabinet makers and designers will let you achieve that unique custom touch to make your home truly yours',
     },
