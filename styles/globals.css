@@ -35,5 +35,36 @@ body {
   @apply rounded bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400 active:bg-amber-500;
 }
 .h1-primary {
-  @apply text-[40px] text-center;
+  @apply text-[40px] text-center text-gray-800 mb-[30px];
+  text-transform: uppercase;
+}
+.h2-primary {
+  @apply text-[36px] text-center;
+}
+.text-primary {
+  @apply text-center text-[18px] font-[500] text-gray-800;
+}
+.text-secondary {
+  @apply text-center text-[18px] font-[400] text-gray-800;
+}
+.text-footer {
+  @apply text-left text-[18px] font-[400] text-gray-200;
+}
+.center-item {
+  @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+}
+.center-col {
+  @apply absolute top-[50%]   translate-y-[-50%];
+}
+.overlay {
+  @apply bg-slate-600 opacity-50 absolute top-0 left-0 w-full h-[100%];
+}
+.btn-primary {
+  @apply flex flex-row justify-center items-center;
+}
+.btn-card-lg {
+  @apply flex flex-row items-center justify-center border-solid border-slate-200 border-2 w-[150px];
+}
+.space {
+  letter-spacing: 1.5px;
 }

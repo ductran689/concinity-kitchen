@@ -1,14 +1,41 @@
 import Layout from '@/components/Layout';
 /* import data from '../utils/data'; */
 import Carousel from '../components/Carousel';
+import Form from '../components/Form';
 /* import ProductItem from '../components/ProductItem'; */
 import Image from 'next/image';
 import Services from '../components/Services';
 import About from '../components/About';
 import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
+import { getAllPics, getCarousel, getAbout } from '../prisma/admin';
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const servicesDb = await getAllPics();
+  const carouselDb = await getCarousel();
+  const aboutDb = await getAbout();
+  const updatedServiceDb = servicesDb.map((serviceDb: Object) => ({
+    ...serviceDb,
+  }));
+  const updatedCarouselDb = carouselDb.map((carousel: Object) => ({
+    ...carousel,
+  }));
+  const updatedAboutDb = aboutDb.map((about: Object) => ({
+    ...about,
+  }));
+
+  return {
+    props: {
+      db: updatedServiceDb,
+      dbCarousel: updatedCarouselDb,
+      dbAbout: updatedAboutDb,
+    },
+  };
+};
+
+export default function Home({ db, dbCarousel, dbAbout }: any) {
+  console.log('carousel', dbCarousel);
+  console.log('about', dbAbout);
   const images = [
     '/images/cabinet_1.jpg',
     '/images/cabinet_2.jpg',
@@ -17,7 +44,7 @@ export default function Home() {
   ];
   return (
     <Layout title="concinity">
-      <div className="carousel lg:w-3/4 mx-auto my-2">
+      <div className="carousel lg:w-full mx-auto ">
         <Carousel loop>
           {images.map((src, i) => {
             return (
@@ -27,9 +54,12 @@ export default function Home() {
               // flex[0_0_100%]
               //   - shorthand for flex-grow:0; flex-shrink:0; flex-basis:100%
               //   - we want this slide to not be able to grow or shrink and take up 100% width of the viewport.
-              <div className="relative h-80 flex-[0_0_100%]" key={i}>
+              <div
+                className="relative h-[700px] w-full flex-[0_0_100%]"
+                key={i}
+              >
                 {/* use object-cover + fill since we don't know the height and width of the parent */}
-                <Image src={src} fill className="object-cover" alt={`${i}`} />
+                <Image src={src} fill className="object-cover " alt={`${i}`} />
               </div>
             );
           })}
@@ -42,9 +72,10 @@ export default function Home() {
         ))}
       </div> */}
       <About></About>
-      <Services></Services>
-      <Gallery></Gallery>
+      <Services services={db}></Services>
+      {/* <Gallery></Gallery> */}
       <Testimonials></Testimonials>
+      <Form></Form>
     </Layout>
   );
 }

@@ -55,7 +55,7 @@ const data = {
       image: '/images/kitchen_1.jpg',
     },
   ],
-  services: [
+  /* services: [
     {
       name: 'Kitchen',
       slug: 'kitchen',
@@ -88,7 +88,7 @@ const data = {
       content:
         'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',
     },
-  ],
+  ], */
   gallery: [
     {
       name: 'KITCHENS',
@@ -97,27 +97,48 @@ const data = {
     },
     {
       name: 'BEFOR & AFTER',
+      slug: 'before_after',
       image: '/images/con_kit_2.jpg',
     },
     {
       name: 'VANITIES',
+      slug: 'vanities',
       image: '/images/cabinet_1.jpg',
     },
     {
       name: 'WARDROBES',
+      slug: 'wardrobes',
       image: '/images/con_wardrobe_1.jpg',
     },
     {
       name: 'LAUDRIES',
+      slug: 'laundries',
       image: '/images/con_kit_3.jpg',
     },
     {
       name: 'CUSTOM JOINERY',
+      slug: 'custom_joinery',
       image: '/images/con_kit_12.jpg',
     },
     {
       name: 'OUTDOOR KITCHEN / BBQ',
+      slug: 'outdoor_kitchen',
+
       image: '/images/con_kit_7.jpg',
+    },
+  ],
+  testimonial: [
+    {
+      name: 'Warner – Moss Vale',
+      key: 1,
+      content:
+        "After obtaining 3 quotes for our new kitchen, Built to Desire was not only the most affordable but the materials used were of better quality. Mark was professional and courteous, spending time going through our needs and wants. Mark and Angela always answered my calls and emails along the way. I wouldn't hesitate recommenidng Built to Desire to anyone in the future",
+    },
+    {
+      name: 'Ken Phan – Fairfield',
+      key: 2,
+      content:
+        'A professional approach to all aspects of getting our new kitchen exactly as we wanted it.',
     },
   ],
 };
