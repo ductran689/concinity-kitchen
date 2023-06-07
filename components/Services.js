@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import data from '../utils/data';
 import Image from 'next/image';
 import Link from 'next/link';
 
