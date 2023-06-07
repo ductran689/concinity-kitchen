@@ -4,11 +4,10 @@ import Carousel from '../components/Carousel';
 import Form from '../components/Form';
 /* import ProductItem from '../components/ProductItem'; */
 import Image from 'next/image';
-import Services from '../components/Services';
 import About from '../components/About';
-import Gallery from '../components/Gallery';
+import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
-import { getAllPics, getCarousel, getAbout } from '../prisma/admin';
+import { getAbout, getAllPics, getCarousel } from '../prisma/admin';
 
 export const getStaticProps = async () => {
   const servicesDb = await getAllPics();

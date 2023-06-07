@@ -1,5 +1,4 @@
 import { createContext, useContext } from 'react';
-import { getAllPics } from '../prisma/admin';
 
 const AppContext = createContext();
 

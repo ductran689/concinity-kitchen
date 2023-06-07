@@ -1,9 +1,8 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import Layout from '../../components/Layout';
-import data from '../../utils/data';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-import Image from 'next/image';
 import { getAllPics } from '../../prisma/admin';
 
 /* option 1 work without API DB */
