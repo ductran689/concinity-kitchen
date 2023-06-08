@@ -54,16 +54,20 @@ export default function ServiceScreen({ db }) {
   )*/
   /* Option2 work with DB */
   /* const { query } = useRouter(); */
-  const service = db;
-  console.log(service);
+
+  console.log(Array.isArray(db));
   /* const { serviceSlug } = query;
   const service = db.find((x) => x.slug === serviceSlug);
   console.log(service);
   if (!service) {
     return <div>Service Not Found</div>;
   } */
-  return db.map((service) => (
-    <Layout title={service.name} key={service.id}>
+  return db.map(service => (
+    <h1>{service.name}</h1>
+  ))
+ 
+  /* db.map((service) => ( */
+    {/* <Layout title={service.name} key={service.id}>
       <div className="py-2">
         <Link href="/">back to service</Link>
       </div>
@@ -71,7 +75,7 @@ export default function ServiceScreen({ db }) {
         <div className="md:col-span-2">
           <Image
             src={service.image}
-            alt={service.name}
+            alt={service.id}
             width={640}
             height={640}
           />
@@ -84,7 +88,7 @@ export default function ServiceScreen({ db }) {
           </ul>
         </div>
       </div>
-    </Layout>
+    </Layout> */}
   ));
 }
 
