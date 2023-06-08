@@ -13,7 +13,7 @@ export default function Layout({ title, children }) {
         <header>
           <Header></Header>
         </header>
-        <main className="  m-auto  bg-white">{children}</main>
+        <main className="  m-auto  bg-slate-200">{children}</main>
         <Footer></Footer>
       </div>
     </>

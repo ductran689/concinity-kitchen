@@ -25,7 +25,12 @@ export default function Services({ services }) {
             key={i}
           >
             <div className="image_container relative w-full lg:min-h-[300px] md:min-h[250] min-h-[250px] hover:scale-105  ease-in duration-100 overflow-hidden">
-              <Link href={`/services/${service.slug}`}>
+              <Link
+                href={{
+                  pathname: `/services/[serviceSlug]`,
+                  query: { serviceSlug: `${service.slug}` },
+                }}
+              >
                 <Image
                   className="rounded-t-lg"
                   src={service.image}
@@ -41,7 +46,12 @@ export default function Services({ services }) {
               </div>
 
               <div className=" mt-6 btn-card-lg  ">
-                <Link href={`/services/${service.slug}`}>
+                <Link
+                  href={{
+                    pathname: `/services/[serviceSlug]`,
+                    query: { serviceSlug: `${service.slug}` },
+                  }}
+                >
                   <button className=" text-center btn-primary ">
                     <p className="text-slate-200 font-medium space">
                       VIEW MORE
