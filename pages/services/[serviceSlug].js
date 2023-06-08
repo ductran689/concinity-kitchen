@@ -53,13 +53,14 @@ export default function ServiceScreen({ db }) {
     
   )*/
   /* Option2 work with DB */
-  const { query } = useRouter();
-  console.log({ query });
-  const { serviceSlug } = query;
+  /* const { query } = useRouter(); */
+  const service = db;
+  /* const { serviceSlug } = query;
   const service = db.find((x) => x.slug === serviceSlug);
+  console.log(service);
   if (!service) {
     return <div>Service Not Found</div>;
-  }
+  } */
   return (
     /* return db.map((service) => ( */
     <Layout title={service.name} key={service.id}>
