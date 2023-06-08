@@ -55,6 +55,7 @@ export default function ServiceScreen({ db }) {
   /* Option2 work with DB */
   /* const { query } = useRouter(); */
   const service = db;
+  console.log(service);
   /* const { serviceSlug } = query;
   const service = db.find((x) => x.slug === serviceSlug);
   console.log(service);
@@ -63,7 +64,7 @@ export default function ServiceScreen({ db }) {
   } */
   return (
     /* return db.map((service) => ( */
-    <Layout title={service.name} key={service.id}>
+    <Layout title="name" key={service.id}>
       <div className="py-2">
         <Link href="/">back to service</Link>
       </div>
