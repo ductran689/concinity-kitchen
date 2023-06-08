@@ -62,9 +62,8 @@ export default function ServiceScreen({ db }) {
   if (!service) {
     return <div>Service Not Found</div>;
   } */
-  return (
-    /* return db.map((service) => ( */
-    <Layout title="name" key={service.id}>
+  return db.map((service) => (
+    <Layout title={service.name} key={service.id}>
       <div className="py-2">
         <Link href="/">back to service</Link>
       </div>
@@ -84,20 +83,9 @@ export default function ServiceScreen({ db }) {
             </li>
           </ul>
         </div>
-        <div className="card p-5">
-          <div className="mb-2 flex justify-between">
-            <div>Price</div>
-            <div>${service.price}</div>
-          </div>
-          <div className="mb-2 flex justify-between">
-            <div>Status</div>
-            <div>{service.countInStock > 0 ? 'In Stock' : 'Out of Stock'}</div>
-          </div>
-          <button className="primary-button w-full">Add to cart</button>
-        </div>
       </div>
     </Layout>
-  );
+  ));
 }
 
 export const getStaticProps = async () => {
