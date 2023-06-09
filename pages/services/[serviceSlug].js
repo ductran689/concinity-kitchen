@@ -1,92 +1,37 @@
-/* import Image from 'next/image';
-import Link from 'next/link'; */
-/* import { useRouter } from 'next/router'; */
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react';
 /* import Layout from '../../components/Layout'; */
 import { getAllPics } from '../../prisma/admin';
+import Layout from '../../components/Layout';
 
-/* option 1 work without API DB */
 export default function ServiceScreen({ db }) {
-  /* const { query } = useRouter();
+  const { query } = useRouter();
   console.log({ query });
   const { serviceSlug } = query;
-  const service = data.services.find((x) => x.slug === serviceSlug);
+  const service = db.find((x) => x.slug === serviceSlug);
   if (!service) {
     return <div>Service Not Found</div>;
   }
   return (
-    <Layout title={service.name}>
-      <div className="py-2">
-        <Link href="/">back to service</Link>
-      </div>
-      <div className="grid md:grid-cols-4 md:gap-3">
-        <div className="md:col-span-2">
-          <Image
-            src={service.image}
-            alt={service.name}
-            width={640}
-            height={640}
-          />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <h1 className="text-lg">{service.name}</h1>
-            </li>
-          </ul>
-        </div>
-        <div className="card p-5">
-          <div className="mb-2 flex justify-between">
-            <div>Price</div>
-            <div>${service.price}</div>
-          </div>
-          <div className="mb-2 flex justify-between">
-            <div>Status</div>
-            <div>{service.countInStock > 0 ? 'In Stock' : 'Out of Stock'}</div>
-          </div>
-          <button className="primary-button w-full">Add to cart</button>
-        </div>
-      </div>
-    </Layout> 
-
-
-    
-  )*/
-  /* Option2 work with DB */
-  /* const { query } = useRouter(); */
-
-  console.log(Array.isArray(db));
-  return db.map((service) => <h1 key={service.id}>{service.id}</h1>);
-  /* const { serviceSlug } = query;
-  const service = db.find((x) => x.slug === serviceSlug);
-  console.log(service);
-  if (!service) {
-    return <div>Service Not Found</div>;
-  } */
-  /* return db.map((service) => (
     <Layout title={service.name} key={service.id}>
-      <div className="py-2">
-        <Link href="/">back to service</Link>
-      </div>
-      <div className="grid md:grid-cols-4 md:gap-3">
-        <div className="md:col-span-2">
-          <Image
-            src={service.image}
-            alt={service.name}
-            width={640}
-            height={640}
-          />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <h1 className="text-lg">{service.name}</h1>
-            </li>
-          </ul>
+      <div className="service_page">
+        <h1 className="text-center h1-primary">{service.name}</h1>
+        <div className="service_gallery grid grid-flow-col grid-col-4 ">
+          {service.sub_images.map((sub, i) => (
+            <div className="sub_container h-[300px]" key={i + 1}>
+              <Image
+                className="rounded-t-lg"
+                src={service.image}
+                alt={service.name}
+                fill={true}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </Layout>
-  )); */
+  );
 }
 
 export const getStaticProps = async () => {

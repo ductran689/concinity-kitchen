@@ -7,6 +7,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+type ServicesSubImages {
+  image String
+  name  String
+}
+
 model About {
   id   String @id @default(auto()) @map("_id") @db.ObjectId
   img  String
@@ -18,11 +23,12 @@ model Gallery {
 }
 
 model services {
-  id      String @id @default(auto()) @map("_id") @db.ObjectId
-  content String
-  image   String
-  name    String
-  slug    String
+  id         String              @id @default(auto()) @map("_id") @db.ObjectId
+  content    String
+  image      String
+  name       String
+  slug       String
+  sub_images ServicesSubImages[]
 }
 
 model top_img {
