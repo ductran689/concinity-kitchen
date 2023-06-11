@@ -1,87 +1,63 @@
-/* import Link from 'next/link'; */
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function Header() {
+function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="bg-slate-200/[0.5] border-gray-200 dark:bg-gray-900 fixed z-10 w-full">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/">
-          <Image
-            className="  "
-            src="https://flowbite.com/docs/images/logo.svg"
-            alt="{gallery.name}"
-            width={40}
-            height={10}
-          />
-        </Link>
+    <nav className="flex items-center justify-between flex-wrap p-6 bg-black/20">
+      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+        <Image
+          className="rounded-t-lg  fill-slate-700"
+          src=""
+          alt="logo"
+          width={40}
+          height={40}
+        />
+      </div>
+      <div className="block lg:hidden">
         <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
         >
-          <span className="sr-only">Open main menu</span>
           <svg
-            className="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
+            className={`fill-white h-5 w-5 ${isOpen ? 'hidden' : 'block'}`}
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+          <svg
+            className={`fill-white h-5 w-5 ${isOpen ? 'block' : 'hidden'}`}
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
           </svg>
         </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <Link href="/">
-                <p
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                  aria-current="page"
-                >
-                  Home
-                </p>
-              </Link>
-            </li>
-            <li>
-              <Link href="#about_section">
-                <p className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  About
-                </p>
-              </Link>
-            </li>
-            <li>
-              <Link href="#service_section">
-                <p
-                  href="#service_section"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Services
-                </p>
-              </Link>
-            </li>
-
-            <li>
-              <Link href="#form_section">
-                <p
-                  href="#form_section"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Contact
-                </p>
-              </Link>
-            </li>
-          </ul>
+      </div>
+      <div
+        className={`w-full block  lg:flex lg:items-center lg:w-auto ${
+          isOpen ? 'block' : 'hidden'
+        }`}
+      >
+        <div className="text-sm lg:flex lg:justify-end">
+          <Link href="#" className="text-header">
+            Home
+          </Link>
+          <Link href="#" className="text-header">
+            About
+          </Link>
+          <Link href="#" className="text-header">
+            Services
+          </Link>
+          <Link href="#" className="text-header">
+            Contact
+          </Link>
         </div>
       </div>
     </nav>
   );
 }
+export default Header;

@@ -18,7 +18,7 @@ export default function Home() {
   ];
   return (
     <Layout title="concinity">
-      <div className="carousel lg:w-full mx-auto ">
+      <div className="carousel w-full mx-auto ">
         <Carousel loop>
           {images.map((src, i) => {
             return (
