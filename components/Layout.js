@@ -9,7 +9,7 @@ export default function Layout({ title, children }) {
         <title>{title ? title : 'concinity-kitchen'}</title>
         <meta name="description" content=" Ecommerce Website" />
       </Head>
-      <div clas>
+      <div>
         <header>
           <Header></Header>
         </header>

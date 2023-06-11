@@ -31,6 +31,7 @@ body {
 .card {
   @apply mb-5 block rounded-lg border border-gray-200 shadow-md;
 }
+
 .primary-button {
   @apply rounded bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400 active:bg-amber-500;
 }
@@ -50,6 +51,9 @@ body {
 .text-footer {
   @apply text-left text-[18px] font-[400] text-gray-200;
 }
+.text-btn {
+  @apply hover:text-slate-700;
+}
 .center-item {
   @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
 }
@@ -65,6 +69,24 @@ body {
 .btn-card-lg {
   @apply flex flex-row items-center justify-center border-solid border-slate-200 border-2 w-[150px];
 }
+.btn-service:hover p {
+  @apply text-slate-900;
+}
+.btn {
+  @apply hover:bg-slate-100;
+}
 .space {
   letter-spacing: 1.5px;
+}
+.grid-md-cols {
+  @apply grid md:grid-cols-2;
+}
+.grid-sm-cols {
+  @apply grid sm:grid-cols-2;
+}
+.grid-lg-cols {
+  @apply grid lg:grid-cols-3;
+}
+.sub_container {
+  @apply border-slate-500 border-solid border-[1px] rounded-lg shadow-md;
 }

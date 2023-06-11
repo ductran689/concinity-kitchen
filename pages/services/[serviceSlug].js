@@ -1,65 +1,53 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React from 'react';
-/* import Layout from '../../components/Layout'; */
-import { getAllPics } from '../../prisma/admin';
 import Layout from '../../components/Layout';
+import data from '../../utils/data';
 
-export default function ServiceScreen({ db }) {
+export default function ServiceScreen() {
   const { query } = useRouter();
   console.log({ query });
   const { serviceSlug } = query;
-  const service = db.find((x) => x.slug === serviceSlug);
+  const service = data.services.find((x) => x.slug === serviceSlug);
   if (!service) {
     return <div>Service Not Found</div>;
   }
   return (
     <Layout title={service.name} key={service.id}>
-      <div className="service_page">
-        <h1 className="text-center h1-primary">{service.name}</h1>
-        <div className="service_gallery grid grid-flow-col grid-col-4 ">
-          {service.sub_images.map((sub, i) => (
-            <div className="sub_container h-[300px]" key={i + 1}>
+      <div className="service_page  bg-white w-[95%] m-auto">
+        <div className="cover h-[400px] relative mb-[100px]">
+          <Image
+            className="rounded-t-lg object-cover brightness-75"
+            src={service.cover}
+            alt={service.name}
+            fill={true}
+          />
+        </div>
+        <div className="service_gallery grid-flow-cols  gap-6 mb-[100px] mx-[20px] grid-lg-cols grid-md-cols grid-sm-cols ">
+          {service.sub_images.map((sub) => (
+            <div
+              className="sub_container h-[400px] relative "
+              key={`${sub.key}`}
+            >
               <Image
-                className="rounded-t-lg"
-                src={service.image}
-                alt={service.name}
+                className="rounded-lg"
+                src={sub.image}
+                alt={sub.name}
                 fill={true}
               />
             </div>
           ))}
         </div>
+        <div className="visit w-[60%] m-auto pb-[100px]">
+          <h1 className="h1-primary">VISIT OUR SHOWROOM</h1>
+          <p className="text-primary">
+            Thank you for considering Kenny Kitchen Joinery for your next
+            project. We look forward to collaborating with you, bringing your
+            kitchen aspirations to life, and creating a space that will be
+            cherished for years to come.
+          </p>
+        </div>
       </div>
     </Layout>
   );
-}
-
-export const getStaticProps = async () => {
-  const servicesDb = await getAllPics();
-  const updatedServiceDb = servicesDb.map((serviceDb) => ({
-    ...serviceDb,
-  }));
-
-  return {
-    props: {
-      db: updatedServiceDb,
-    },
-  };
-};
-
-export async function getStaticPaths() {
-  const data = await getAllPics();
-  const updatedData = data.map((serviceDb) => ({
-    ...serviceDb,
-  }));
-  const paths = updatedData.map((data) => {
-    return {
-      params: { serviceSlug: data.slug.toString() },
-    };
-  });
-
-  return {
-    paths: paths,
-    fallback: true,
-  };
 }

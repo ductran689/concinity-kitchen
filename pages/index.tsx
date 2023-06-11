@@ -7,39 +7,14 @@ import Image from 'next/image';
 import About from '../components/About';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
-import { getAbout, getAllPics, getCarousel } from '../prisma/admin';
+/* import { getAbout, getAllPics, getCarousel } from '../prisma/admin'; */
 
-export const getStaticProps = async () => {
-  const servicesDb = await getAllPics();
-  const carouselDb = await getCarousel();
-  const aboutDb = await getAbout();
-  const updatedServiceDb = servicesDb.map((serviceDb: Object) => ({
-    ...serviceDb,
-  }));
-  const updatedCarouselDb = carouselDb.map((carousel: Object) => ({
-    ...carousel,
-  }));
-  const updatedAboutDb = aboutDb.map((about: Object) => ({
-    ...about,
-  }));
-
-  return {
-    props: {
-      db: updatedServiceDb,
-      dbCarousel: updatedCarouselDb,
-      dbAbout: updatedAboutDb,
-    },
-  };
-};
-
-export default function Home({ db, dbCarousel, dbAbout }: any) {
-  console.log('carousel', dbCarousel);
-  console.log('about', dbAbout);
+export default function Home() {
   const images = [
-    '/images/cabinet_1.jpg',
-    '/images/cabinet_2.jpg',
-    '/images/kitchen_1.jpg',
-    '/images/kitchen_3.jpg',
+    '/images/kit-18.webp',
+    '/images/kit-17.webp',
+    '/images/kit-16.webp',
+    '/images/kit-15.webp',
   ];
   return (
     <Layout title="concinity">
@@ -54,11 +29,16 @@ export default function Home({ db, dbCarousel, dbAbout }: any) {
               //   - shorthand for flex-grow:0; flex-shrink:0; flex-basis:100%
               //   - we want this slide to not be able to grow or shrink and take up 100% width of the viewport.
               <div
-                className="relative h-[700px] w-full flex-[0_0_100%]"
+                className="relative h-[800px] w-full flex-[0_0_100%]"
                 key={i}
               >
                 {/* use object-cover + fill since we don't know the height and width of the parent */}
-                <Image src={src} fill className="object-cover " alt={`${i}`} />
+                <Image
+                  src={src}
+                  fill
+                  className="object-cover brightness-85 "
+                  alt={`${i}`}
+                />
               </div>
             );
           })}
@@ -71,7 +51,7 @@ export default function Home({ db, dbCarousel, dbAbout }: any) {
         ))}
       </div> */}
       <About></About>
-      <Services services={db}></Services>
+      <Services></Services>
       {/* <Gallery></Gallery> */}
       <Testimonials></Testimonials>
       <Form></Form>

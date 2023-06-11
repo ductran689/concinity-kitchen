@@ -33,17 +33,21 @@ export default function About() {
       </h2>
       <div className="about_context container m-auto">
         <p className="text-primary mb-[50px] mt-[50px]">
-          Perfect Kitchens is a family owned and operated Australian company
-          based in West Sydney. We have been servicing Sydney homes with quality
-          Kitchens, Vanities, Wardrobes and Cabinetry products for over 25
-          years.
+          At Kenny Kitchen Joinery, we understand that the kitchen is the heart
+          of every home. It is where memories are made, meals are prepared, and
+          families gather to share stories and laughter. We believe that a
+          well-designed kitchen should reflect the unique tastes and lifestyle
+          of its owners, providing both functionality and aesthetics that
+          inspire and delight.
         </p>
 
         <p className="text-primary">
-          All our Kitchens, Vanities, Wardrobes and Cabinetry are custom built
-          in our own factory right here in western Sydney. We only employ
-          qualified tradespeople who build your cabinetry to special order,
-          eliminating the need for modular or standard size cabinets.
+          We invite you to explore our portfolio and be inspired by our past
+          projects, showcasing our versatility and ability to cater to a wide
+          range of design preferences. When you choose Kenny Kitchen Joinery,
+          you choose an unrivaled experience where passion, craftsmanship, and
+          attention to detail converge to create kitchen spaces that are both
+          functional and breathtakingly beautiful.
         </p>
 
         {/* <div className="col2">
