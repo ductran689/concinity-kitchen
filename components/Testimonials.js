@@ -4,7 +4,7 @@ import React from 'react';
 export default function Testimonials() {
   console.log(data.testimonial);
   return (
-    <div className="mt-[100px] h-[300px] mb-[200px]">
+    <div className="mt-[100px]  mb-[200px]">
       <h1 className="h1-primary">Testimonials</h1>
       {data.testimonial.map((test) => (
         <div

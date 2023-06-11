@@ -15,7 +15,7 @@ export default function ServiceScreen() {
   return (
     <Layout title={service.name} key={service.id}>
       <div className="service_page  bg-white w-[95%] m-auto">
-        <div className="cover lg:h-[400px] md:h-[300px] relative mb-[100px] sm:h-[200px]">
+        <div className="cover lg:h-[400px] md:h-[300px] sm:h-[200px] min-[320px]:h-[200px] relative mb-[100px] ">
           <Image
             className="rounded-t-lg object-cover brightness-75"
             src={service.cover}

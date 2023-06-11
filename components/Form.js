@@ -91,7 +91,7 @@ export default function Form() {
         />
       </div>
       <form
-        className="m-auto rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white/[0.8] dark:bg-blue-500  z-900 center-item sm:w-[95%] md:w-[70%] lg:w-[60%] "
+        className="m-auto rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white/[0.8] dark:bg-blue-500  z-900 center-item form_responsive "
         onSubmit={handleSubmit}
       >
         <h1 className="text-2xl font-bold dark:text-gray-50">Send a message</h1>

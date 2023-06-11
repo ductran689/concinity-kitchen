@@ -43,16 +43,22 @@ function Header() {
         }`}
       >
         <div className="text-sm lg:flex lg:justify-end">
-          <Link href="#" className="text-header">
+          <Link href="/" className="text-header">
             Home
           </Link>
-          <Link href="#" className="text-header">
+          <Link href="#about_section" className="text-header">
             About
           </Link>
-          <Link href="#" className="text-header">
+          <Link href="#services_section" className="text-header">
             Services
           </Link>
-          <Link href="#" className="text-header">
+          <Link href="#services_section" className="text-header">
+            Projects
+          </Link>
+          <Link href="#services_section" className="text-header">
+            Career
+          </Link>
+          <Link href="#form_section" className="text-header">
             Contact
           </Link>
         </div>

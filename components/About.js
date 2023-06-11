@@ -1,13 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import Link from 'next/link';
+import text from '../utils/text';
 
 export default function About() {
   return (
     <div
-      className="about mt-[100px] mb-[100px] w-[70%] m-auto"
+      className="about mt-[100px] mb-[100px] lg:w-[70%] md:w-[80%] min-[320px]:w-[90%] m-auto "
       id="about_section"
     >
+      <div className="cover lg:h-[400px] md:h-[300px] sm:h-[200px] min-[320px]:h-[200px] relative mb-[100px] ">
+        <Image
+          className="rounded-t-lg object-cover brightness-75"
+          src={service.cover}
+          alt={service.name}
+          fill={true}
+        />
+      </div>
       <h1 className="h1-primary text-gray-800">
         Creating Perfect Kitchen In Sydney
       </h1>
@@ -28,27 +37,9 @@ export default function About() {
         ))}
       </div> */}
       {/* title */}
-      <h2 className="text-[30px] text-gray-800 text-center">
-        New Kitchens & Kitchen Renovations
-      </h2>
-      <div className="about_context container m-auto">
-        <p className="text-primary mb-[50px] mt-[50px]">
-          At Kenny Kitchen Joinery, we understand that the kitchen is the heart
-          of every home. It is where memories are made, meals are prepared, and
-          families gather to share stories and laughter. We believe that a
-          well-designed kitchen should reflect the unique tastes and lifestyle
-          of its owners, providing both functionality and aesthetics that
-          inspire and delight.
-        </p>
-
-        <p className="text-primary">
-          We invite you to explore our portfolio and be inspired by our past
-          projects, showcasing our versatility and ability to cater to a wide
-          range of design preferences. When you choose Kenny Kitchen Joinery,
-          you choose an unrivaled experience where passion, craftsmanship, and
-          attention to detail converge to create kitchen spaces that are both
-          functional and breathtakingly beautiful.
-        </p>
+      <h2 className=" h2-responsive">New Kitchens & Kitchen Renovations</h2>
+      <div className="about_context  m-auto">
+        <p className="text-primary mb-[50px] mt-[50px]">{text.about.intro}</p>
 
         {/* <div className="col2">
           <p className="text-left text-xs font-thin text-gray-800">
@@ -70,7 +61,7 @@ export default function About() {
         </div> */}
       </div>
       <div className=" flex flex-col items-center justify-center mt-[50px]">
-        <Link href="/">
+        <Link href="/about">
           <button className="bg-black  btn-primary px-[25px] py-[15px]">
             <p className=" text-slate-100 font-medium space">LEARN MORE</p>
 
