@@ -12,8 +12,8 @@ export default function About() {
       <div className="cover lg:h-[400px] md:h-[300px] sm:h-[200px] min-[320px]:h-[200px] relative mb-[100px] ">
         <Image
           className="rounded-t-lg object-cover brightness-75"
-          src={service.cover}
-          alt={service.name}
+          src=""
+          alt=""
           fill={true}
         />
       </div>
