@@ -88,7 +88,7 @@ const data = {
         },
       ],
       key: '123',
-      image: '/images/kitchen_5.jpg',
+      image: '/images/dark_kit_2.jpg',
       content:
         'Let us create you a kitchen to fulfil your aspirations. Custom made, exquisitely designed and perfectly installed using the latest tools and hardware.',
     },
@@ -129,7 +129,7 @@ const data = {
         },
       ],
       key: 'vanities',
-      image: '/images/kitchen_6.jpg',
+      image: '/images/dark_kit_3.jpg',
       content:
         'Unleash your imagination to explore the possibilities of your dream bathroom. Wake up to a Perfect Kitchens’ exclusive vanity',
     },
@@ -191,7 +191,7 @@ const data = {
         },
       ],
       key: 'storage',
-      image: '/images/kitchen_8.jpg',
+      image: '/images/dark_kit_7.jpg',
       content:
         'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',
     },

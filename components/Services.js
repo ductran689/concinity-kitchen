@@ -38,7 +38,7 @@ export default function Services() {
             <div className="image_container relative w-full lg:min-h-[300px] md:min-h[250] min-h-[250px] hover:scale-105  ease-in duration-100 overflow-hidden">
               <Link href={`/services/${service.slug}`}>
                 <Image
-                  className="rounded-t-lg brightness-50 fill-slate-700"
+                  className="rounded-t-lg  fill-slate-700"
                   src={service.image}
                   alt={service.name}
                   fill={true}
