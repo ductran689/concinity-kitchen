@@ -10,7 +10,7 @@ export default function Footer() {
           </h3>
           <p>
             <span className="text-footer-responsive">Phone No: </span>
-            <span className="text-footer-responsive">0416611889</span> <br />
+            <span className="text-footer-responsive">0416677889</span> <br />
             <span className="text-footer-responsive">Address: </span>
             <span className="text-footer-responsive">Unknow</span> <br />
             <span className="text-footer-responsive">Email: </span>
@@ -24,17 +24,18 @@ export default function Footer() {
             TRADING HOURS
           </h3>
           <p>
-            <span className=" text-footer-responsive">Mon- Fri: </span>
-            <span className=" text-footer-responsive">9am - 5pm</span> <br />
-            <span className=" text-footer-responsive ">Sat: </span>
-            <span className=" text-footer-responsive">
-              Appointment Only
-            </span>{' '}
+            <span className=" text-footer-responsive">Mon- Sat: </span>
+            <span className=" text-footer-responsive">7am - 5pm</span> <br />
+            {/*   <span className=" text-footer-responsive ">Sat: </span>
+              <span className=" text-footer-responsive">
+                Appointment Only
+              </span>{' '} */}
             <br />
             <span className=" text-footer-responsive ">
-              Sun + Public Holidays:{' '}
+              Sun + Public Holidays:
             </span>
-            <span className=" text-footer-responsive">Closed</span> <br />
+            <span className=" text-footer-responsive"> Appointment Only</span>{' '}
+            <br />
           </p>
         </div>
       </div>

@@ -9,14 +9,6 @@ export default function About() {
       className="about mt-[100px] mb-[100px] lg:w-[70%] md:w-[80%] min-[320px]:w-[90%] m-auto "
       id="about_section"
     >
-      <div className="cover lg:h-[400px] md:h-[300px] sm:h-[200px] min-[320px]:h-[200px] relative mb-[100px] ">
-        <Image
-          className="rounded-t-lg object-cover brightness-75"
-          src=""
-          alt=""
-          fill={true}
-        />
-      </div>
       <h1 className="h1-primary text-gray-800">
         Creating Perfect Kitchen In Sydney
       </h1>

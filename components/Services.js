@@ -2,7 +2,7 @@
 import data from '@/utils/data';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import BtnCard from '../components/BtnCard';
 
 /* const fetchPics = async () => {
   const response = await fetch('../../api/admin');
@@ -10,16 +10,6 @@ import { useState } from 'react';
   console.log(data);
 }; */
 export default function Services() {
-  const [activeId, setActiveId] = useState(0);
-  const handleHover = (id) => {
-    setActiveId(id);
-    console.log('onhover', activeId);
-  };
-  const undoHover = () => {
-    setActiveId(0);
-
-    console.log('offhover', activeId);
-  };
   return (
     <div className="services  mt-[200px] mb-[200px] " id="service_section">
       <h1 className="h1-primary">OUR SERVICVE</h1>
@@ -29,7 +19,7 @@ export default function Services() {
         find out more.
       </p>
       {/* services-cards */}
-      <div className=" grid mt-4 gap-2 grid-cols-1 md:grid-cols-4 lg:grid-cols-4 lg:justify-self-center lg:justify-items-center  sm:justify-self-center sm: justify-items-center">
+      <div className=" grid mt-4 gap-x-2 gap-y-8 grid-cols-1 md:grid-cols-4 lg:grid-cols-4 lg:justify-self-center lg:justify-items-center  sm:justify-self-center sm: justify-items-center">
         {data.services.map((service, i) => (
           <div
             className="service_card w-[90%] border-solid border-transparent  border-2 bg-white  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative hover:overflow-hidden  overflow-hidden"
@@ -46,36 +36,9 @@ export default function Services() {
               </Link>
             </div>
             {/* <div className="image_overlay overlay  "></div> */}
-            <div className="service_content center-item ">
-              <div className="describtion ">
-                <h2 className="h2-primary text-white">{service.name}</h2>
-              </div>
-
-              <div
-                className=" mt-6 btn-card-lg btn "
-                onMouseEnter={() => handleHover(service.key)}
-                onMouseLeave={undoHover}
-              >
-                <Link href={`/services/${service.slug}`}>
-                  <button className="btn-service text-center btn-primary ">
-                    <p className="text-slate-200 font-medium space text-btn">
-                      VIEW MORE
-                    </p>
-                    <Image
-                      className="ml-[15px] my-[15px]"
-                      src={
-                        activeId === service.key
-                          ? `/images/arrowlongrightblack.svg`
-                          : `/images/arrowlongrightwhite.svg`
-                      }
-                      alt=" right arrow"
-                      width={12}
-                      height={10}
-                    />
-                  </button>
-                </Link>
-              </div>
-            </div>
+            <BtnCard service={service} href={service.slug}>
+              {service.name}
+            </BtnCard>
           </div>
         ))}
       </div>

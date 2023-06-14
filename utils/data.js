@@ -60,8 +60,8 @@ const data = {
       name: 'Kitchen',
       slug: 'kitchen',
       cover: '/images/cover-1.webp',
-      sub_images: [
-        {
+      /*   sub_images: [
+         {
           name: 'kit-1',
           key: 'kit-1',
           image: '/images/kit-1.jpg',
@@ -85,6 +85,84 @@ const data = {
           name: 'kit-5',
           key: 'kit-5',
           image: '/images/kit-5.jpg',
+        },
+      ], */
+      subServices: [
+        {
+          name: 'New',
+          slug: 'new_kitchen',
+          key: 'newkitchen',
+          image: '/images/con_kit_7.jpg',
+          pics: [
+            {
+              key: 'nk1',
+              image: '/images/con_kit_7.jpg',
+            },
+            {
+              key: 'nk2',
+              image: '/images/con_kit_1.jpg',
+            },
+            {
+              key: 'nk3',
+              image: '/images/con_kit_2.jpg',
+            },
+            {
+              key: 'nk4',
+              image: '/images/con_kit_3.jpg',
+            },
+            {
+              key: 'nk5',
+              image: '/images/con_kit_4.jpg',
+            },
+          ],
+        },
+        {
+          name: 'Renovation',
+          slug: 'renovation',
+          key: 'kitchenrenovation',
+          image: '/images/con_kit_6.jpg',
+          pics: [
+            {
+              key: '',
+              image: '',
+            },
+          ],
+        },
+        {
+          name: 'Flat Back Cabinet',
+          slug: 'flatback_cabinet',
+          key: 'flatback',
+          image: '/images/con_kit_4.jpg',
+          pics: [
+            {
+              key: '',
+              image: '',
+            },
+          ],
+        },
+        {
+          name: 'Cut to Size',
+          slug: 'cut2size',
+          key: 'cut2size',
+          image: '/images/con_kit_3.jpg',
+          pics: [
+            {
+              key: '',
+              image: '',
+            },
+          ],
+        },
+        {
+          name: 'Cabinet Prefacing',
+          slug: 'cabinetpreface',
+          key: 'cabipreface',
+          image: '/images/con_kit_2.jpg',
+          pics: [
+            {
+              key: '',
+              image: '',
+            },
+          ],
         },
       ],
       key: '123',
@@ -128,6 +206,7 @@ const data = {
           image: '/images/kit-11.jpg',
         },
       ],
+      /* subServices: [], */
       key: 'vanities',
       image: '/images/dark_kit_3.jpg',
       content:
@@ -159,6 +238,9 @@ const data = {
           image: '/images/kit-23.jpg',
         },
       ],
+      /*  subServices: [
+        
+      ], */
       key: 'custom',
       image: '/images/dark-kit_1.jpg',
       content:
@@ -167,6 +249,61 @@ const data = {
     {
       name: 'Storage',
       slug: 'storage',
+      cover: '/images/cover-4.webp',
+      /* sub_images: [
+        {
+          name: 'sto-1',
+          key: 'sto-1',
+          image: '/images/kit-26.jpg',
+        },
+        {
+          name: 'sto-2',
+          key: 'sto-2',
+          image: '/images/kit-25.jpg',
+        },
+        {
+          name: 'sto-3',
+          key: 'sto-3',
+          image: '/images/kit-24.jpg',
+        },
+        {
+          name: 'sto-4',
+          key: 'sto-4',
+          image: '/images/kit-23.jpg',
+        },
+      ], */
+      subServices: [
+        {
+          name: 'Garage Storage',
+          slug: 'garage',
+          key: 'garage',
+          pics: [
+            {
+              key: '',
+              image: '',
+            },
+          ],
+        },
+        {
+          name: 'Wardrobes',
+          slug: 'wardrobes',
+          key: 'nwardrobe',
+          pics: [
+            {
+              key: '',
+              image: '',
+            },
+          ],
+        },
+      ],
+      key: 'storage',
+      image: '/images/dark_kit_7.jpg',
+      content:
+        'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',
+    },
+    {
+      name: 'Design',
+      slug: 'design',
       cover: '/images/cover-4.webp',
       sub_images: [
         {
@@ -190,6 +327,7 @@ const data = {
           image: '/images/kit-23.jpg',
         },
       ],
+      /*  subServices: [], */
       key: 'storage',
       image: '/images/dark_kit_7.jpg',
       content:
@@ -239,7 +377,7 @@ const data = {
       name: 'Warner – Moss Vale',
       key: 1,
       content:
-        "After obtaining 3 quotes for our new kitchen, Built to Desire was not only the most affordable but the materials used were of better quality. Mark was professional and courteous, spending time going through our needs and wants. Mark and Angela always answered my calls and emails along the way. I wouldn't hesitate recommenidng Built to Desire to anyone in the future",
+        "After obtaining 3 quotes for our new kitchen, Built to Desire was not only the most affordable but the materials used were of better quality. Mark was professional and courteous, spending time going through our needs and wants. Mark and Angela always answered my calls and emails along the way. I wouldn't hesitate recommenkeyng Built to Desire to anyone in the future",
     },
     {
       name: 'Ken Phan – Fairfield',

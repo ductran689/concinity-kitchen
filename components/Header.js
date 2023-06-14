@@ -56,6 +56,9 @@ function Header() {
             Projects
           </Link>
           <Link href="#services_section" className="text-header">
+            Promotion
+          </Link>
+          <Link href="#services_section" className="text-header">
             Career
           </Link>
           <Link href="#form_section" className="text-header">
