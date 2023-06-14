@@ -274,13 +274,14 @@ const data = {
       ], */
       subServices: [
         {
-          name: 'Garage Storage',
+          name: 'Garage',
           slug: 'garage',
           key: 'garage',
+          image: '/images/con_kit_4.jpg',
           pics: [
             {
-              key: '',
-              image: '',
+              key: 'gs',
+              image: '/images/con_kit_4.jpg',
             },
           ],
         },
@@ -288,10 +289,11 @@ const data = {
           name: 'Wardrobes',
           slug: 'wardrobes',
           key: 'nwardrobe',
+          image: '/images/con_kit_11.jpg',
           pics: [
             {
-              key: '',
-              image: '',
+              key: 'wr',
+              image: '/images/con_kit_10.jpg',
             },
           ],
         },
