@@ -206,7 +206,20 @@ const data = {
           image: '/images/kit-11.jpg',
         },
       ],
-      subServices: [],
+      subServices: [
+        {
+          name: 'Garage',
+          slug: 'garage',
+          key: 'garage',
+          image: '/images/con_kit_4.jpg',
+          pics: [
+            {
+              key: 'gs',
+              image: '/images/con_kit_4.jpg',
+            },
+          ],
+        },
+      ],
       key: 'vanities',
       image: '/images/dark_kit_3.jpg',
       content:
@@ -238,7 +251,20 @@ const data = {
           image: '/images/kit-23.jpg',
         },
       ],
-      subServices: [],
+      subServices: [
+        {
+          name: 'Garage',
+          slug: 'garage',
+          key: 'garage',
+          image: '/images/con_kit_4.jpg',
+          pics: [
+            {
+              key: 'gs',
+              image: '/images/con_kit_4.jpg',
+            },
+          ],
+        },
+      ],
       key: 'custom',
       image: '/images/dark-kit_1.jpg',
       content:
@@ -327,7 +353,20 @@ const data = {
           image: '/images/kit-23.jpg',
         },
       ],
-      subServices: [],
+      subServices: [
+        {
+          name: 'Garage',
+          slug: 'garage',
+          key: 'garage',
+          image: '/images/con_kit_4.jpg',
+          pics: [
+            {
+              key: 'gs',
+              image: '/images/con_kit_4.jpg',
+            },
+          ],
+        },
+      ],
       key: 'storage',
       image: '/images/dark_kit_7.jpg',
       content:
