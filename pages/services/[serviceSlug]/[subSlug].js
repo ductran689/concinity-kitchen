@@ -54,5 +54,7 @@ export default function SubService() {
         </div>
       </Layout>
     );
+  } else {
+    <div>error occured</div>;
   }
 }
