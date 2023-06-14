@@ -206,7 +206,7 @@ const data = {
           image: '/images/kit-11.jpg',
         },
       ],
-      /* subServices: [], */
+      subServices: [],
       key: 'vanities',
       image: '/images/dark_kit_3.jpg',
       content:
@@ -238,9 +238,7 @@ const data = {
           image: '/images/kit-23.jpg',
         },
       ],
-      /*  subServices: [
-        
-      ], */
+      subServices: [],
       key: 'custom',
       image: '/images/dark-kit_1.jpg',
       content:
@@ -329,7 +327,7 @@ const data = {
           image: '/images/kit-23.jpg',
         },
       ],
-      /*  subServices: [], */
+      subServices: [],
       key: 'storage',
       image: '/images/dark_kit_7.jpg',
       content:
