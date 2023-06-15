@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import DropdownMenu from '../components/DropdownMenu';
 import React, { useState } from 'react';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 bg-black/20">
+    <nav className="flex items-center justify-between flex-wrap p-x-6 bg-black/50">
       <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
         <Image
           className="rounded-t-lg  fill-slate-700"
@@ -49,18 +50,16 @@ function Header() {
           <Link href="#about_section" className="text-header">
             About
           </Link>
-          <Link href="#service_section" className="text-header">
-            Services
-          </Link>
+
+          <DropdownMenu>Services</DropdownMenu>
+
           <Link href="#services_section" className="text-header">
             Projects
           </Link>
           <Link href="#services_section" className="text-header">
             Promotion
           </Link>
-          <Link href="#service_section" className="text-header">
-            Career
-          </Link>
+
           <Link href="#form_section" className="text-header">
             Contact
           </Link>

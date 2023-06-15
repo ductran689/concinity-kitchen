@@ -55,7 +55,7 @@ body {
   @apply text-left text-[18px] font-[400] text-gray-200;
 }
 .text-header {
-  @apply block mt-4 lg:inline-block lg:mt-0  mr-4 hover:text-white text-[18px] font-[500] text-gray-200;
+  @apply block mt-4 lg:inline-block lg:mt-0  mr-4 hover:text-white text-[18px] font-[500] text-gray-100;
 }
 .text-btn {
   @apply hover:text-slate-700;
