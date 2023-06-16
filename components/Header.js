@@ -47,7 +47,7 @@ function Header() {
           <Link href="/" className="text-header">
             Home
           </Link>
-          <Link href="#about_section" className="text-header">
+          <Link href="/about" className="text-header">
             About
           </Link>
 
@@ -56,7 +56,7 @@ function Header() {
           <Link href="#services_section" className="text-header">
             Projects
           </Link>
-          <Link href="#services_section" className="text-header">
+          <Link href="/promotion" className="text-header">
             Promotion
           </Link>
 

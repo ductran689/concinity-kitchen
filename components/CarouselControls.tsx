@@ -8,7 +8,7 @@ type Props = {
 };
 const CarouselControls = (props: Props) => {
   return (
-    <div className="flex flex-row-reverse justify-between  center-item w-[98%] ">
+    <div className="flex flex-row-reverse justify-between  center-item w-[98%] center-col ">
       <div
         onClick={() => {
           if (props.canScrollNext) {

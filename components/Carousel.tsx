@@ -32,7 +32,7 @@ const Carousel = ({ children, ...options }: Props) => {
   const canScrollNext = !!emblaApi?.canScrollNext();
   const canScrollPrev = !!emblaApi?.canScrollPrev();
   return (
-    <>
+    <div className="relative">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">{children}</div>
       </div>
@@ -44,7 +44,7 @@ const Carousel = ({ children, ...options }: Props) => {
         onNext={() => emblaApi?.scrollNext()}
         onPrev={() => emblaApi?.scrollPrev()}
       />
-    </>
+    </div>
   );
 };
 export default Carousel;

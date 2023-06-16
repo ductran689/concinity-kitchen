@@ -425,6 +425,23 @@ const data = {
         'A professional approach to all aspects of getting our new kitchen exactly as we wanted it.',
     },
   ],
+  promotion: [
+    {
+      name: 'Promo 1',
+      image: '/images/promo-1.webp',
+      content:
+        'Free a stainless steel Westinghouse 600m dishwasher for any quote over $15.999',
+      link: '',
+      key: 'promo1',
+    },
+    {
+      name: 'Promo 2',
+      image: '',
+      content: 'Coming soon',
+      link: '',
+      key: 'promo2',
+    },
+  ],
 };
 
 export default data;

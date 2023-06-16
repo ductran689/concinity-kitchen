@@ -5,6 +5,7 @@ import Layout from '../../components/Layout';
 import BtnCard from '../../components/BtnCard';
 import data from '../../utils/data';
 import Link from 'next/link';
+import SubLayout from '../../components/SubLayout';
 
 export default function ServiceScreen() {
   const { query } = useRouter();
@@ -16,62 +17,40 @@ export default function ServiceScreen() {
     return <div>Service Not Found</div>;
   }
   return (
-    <Layout title={service.name} key={service.id}>
-      <div className="service_page  bg-white w-[95%] m-auto">
-        <div className="cover lg:h-[400px] md:h-[300px] sm:h-[200px] min-[320px]:h-[200px] relative mb-[100px] ">
-          <Image
-            className="rounded-t-lg object-cover brightness-75"
-            src={service.cover}
-            alt={service.name}
-            fill={true}
-          />
-        </div>
-        <div className="service_gallery grid-flow-cols  gap-6 mb-[100px] mx-[20px] grid-lg-cols grid-md-cols grid-sm-cols ">
-          {service.sub_images
-            ? service.sub_images.map((sub) => (
-                <div
-                  className="sub_container h-[400px] relative "
-                  key={`${sub.key}`}
-                >
+    <SubLayout topic={service.name} key={service.key}>
+      <div className="service_gallery grid-flow-cols  gap-6 mb-[100px] mx-[20px] grid-lg-cols grid-md-cols grid-sm-cols ">
+        {service.sub_images
+          ? service.sub_images.map((sub) => (
+              <div
+                className="sub_container h-[400px] relative "
+                key={`${sub.key}`}
+              >
+                <Image
+                  className="rounded-lg"
+                  src={sub.image}
+                  alt={sub.name}
+                  fill={true}
+                />
+              </div>
+            ))
+          : service.subServices.map((sub, j) => (
+              <div className="sub_container h-[400px] relative " key={j + 0.1}>
+                <Link href={`/services/${service.slug}/${sub.slug}`}>
                   <Image
-                    className="rounded-lg"
+                    className="rounded-lg brightness-75"
                     src={sub.image}
                     alt={sub.name}
                     fill={true}
                   />
-                </div>
-              ))
-            : service.subServices.map((sub, j) => (
-                <div
-                  className="sub_container h-[400px] relative "
-                  key={j + 0.1}
-                >
-                  <Link href={`/services/${service.slug}/${sub.slug}`}>
-                    <Image
-                      className="rounded-lg brightness-75"
-                      src={sub.image}
-                      alt={sub.name}
-                      fill={true}
-                    />
-                  </Link>
+                </Link>
 
-                  <BtnCard service={sub} href={`${service.slug}/${sub.slug}`}>
-                    {' '}
-                    {sub.name}
-                  </BtnCard>
-                </div>
-              ))}
-        </div>
-        <div className="visit w-[60%] m-auto pb-[100px]">
-          <h1 className="h1-primary">VISIT OUR SHOWROOM</h1>
-          <p className="text-primary">
-            Thank you for considering Kenny Kitchen Joinery for your next
-            project. We look forward to collaborating with you, bringing your
-            kitchen aspirations to life, and creating a space that will be
-            cherished for years to come.
-          </p>
-        </div>
+                <BtnCard service={sub} href={`${service.slug}/${sub.slug}`}>
+                  {' '}
+                  {sub.name}
+                </BtnCard>
+              </div>
+            ))}
       </div>
-    </Layout>
+    </SubLayout>
   );
 }
