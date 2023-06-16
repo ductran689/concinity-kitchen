@@ -81,7 +81,7 @@ export default function Form() {
   };
 
   return (
-    <div className="form relative mt-[200px] h-[700px]" id="form_section">
+    <div className="form relative mt-[100px] h-[700px]" id="form_section">
       <div className="form_bg ">
         <Image
           className="blur-[1px]"

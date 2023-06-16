@@ -7,7 +7,7 @@ export default function SubLayout({ topic, children }) {
   return (
     <Layout>
       <div className="promo_page bg-white w-[95%] m-auto">
-        <div className="cover lg:h-[350px] md:h-[300px] sm:h-[200px] min-[320px]:h-[200px] relative mb-[100px] ">
+        <div className="cover lg:h-[350px] md:h-[300px] sm:h-[200px] min-[320px]:h-[200px] relative mb-[100px] max-[768px]:mb-[50px] ">
           <h1 className="text-white font-[500] text-[50px] max-[672px]:text-[40px] max-[555px]:text-[30px] px-4 center-item z-30 rounded-lg shadow-lg ring-2 ring-white">
             {topic}
           </h1>

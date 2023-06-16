@@ -22,10 +22,10 @@ export default function index() {
                   <h1 className="text-slate-800 font-[500] text-[40px] max-[768px]:text-[30px] text-center ">
                     {promo.name}
                   </h1>
-                  <h2 className=" text-slate-800 font-[400] text-[30px] max-[768px]:text-lg text-center max-[768px]:mb-[20px] mb-[50px] ">
+                  <h2 className=" text-slate-800 font-[400] text-[30px] max-[670px]:text-[18px] text-center max-[768px]:mb-[20px] mb-[50px] ">
                     {promo.content}
                   </h2>
-                  <div className="img-content w-[70%] h-[50%] relative mx-auto ">
+                  <div className="img-content w-[70%] h-[50%] max-[565px]:h-[40%] max-[400px]:h-[30%] relative mx-auto ">
                     <Link href="https://www.harveynorman.com.au/westinghouse-60cm-13-place-setting-stainless-steel-freestanding-dishwasher.html?CAWELAID=720013240000514751&gclid=Cj0KCQjw7aqkBhDPARIsAKGa0oLHnMll6o7bmusosJxGOjZ1NCxLQ43HCtd2bj177qICLN_9hsqCEzwaApMREALw_wcB&gclsrc=aw.ds">
                       <Image
                         className="rounded-t-lg  fill-slate-700 "

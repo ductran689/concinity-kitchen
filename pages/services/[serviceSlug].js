@@ -21,7 +21,7 @@ export default function ServiceScreen() {
         {service.sub_images
           ? service.sub_images.map((sub) => (
               <div
-                className="sub_container h-[400px] relative "
+                className="sub_container h-[400px] max-[433px]:h-[300px] relative "
                 key={`${sub.key}`}
               >
                 <Image
@@ -33,7 +33,10 @@ export default function ServiceScreen() {
               </div>
             ))
           : service.subServices.map((sub, j) => (
-              <div className="sub_container h-[400px] relative " key={j + 0.1}>
+              <div
+                className="sub_container h-[400px] max-[433px]:h-[300px] relative "
+                key={j + 0.1}
+              >
                 <Link href={`/services/${service.slug}/${sub.slug}`}>
                   <Image
                     className="rounded-lg brightness-75"
