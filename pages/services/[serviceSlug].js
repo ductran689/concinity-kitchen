@@ -1,11 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
-import Layout from '../../components/Layout';
 import BtnCard from '../../components/BtnCard';
-import data from '../../utils/data';
-import Link from 'next/link';
 import SubLayout from '../../components/SubLayout';
+import data from '../../utils/data';
 
 export default function ServiceScreen() {
   const { query } = useRouter();

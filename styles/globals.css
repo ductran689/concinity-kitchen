@@ -120,6 +120,3 @@ body {
 .about_xtra_res {
   @apply max-[880px]:flex-col max-[880px]:justify-center max-[880px]:items-center;
 }
-.carousel-responsive {
-  @apply;
-}

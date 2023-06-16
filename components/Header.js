@@ -48,12 +48,12 @@ function Header() {
             Home
           </Link>
           <Link href="/about" className="text-header">
-            About
+            Profile
           </Link>
 
           <DropdownMenu>Services</DropdownMenu>
 
-          <Link href="#services_section" className="text-header">
+          <Link href="/projects" className="text-header">
             Projects
           </Link>
           <Link href="/promotion" className="text-header">

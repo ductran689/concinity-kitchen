@@ -1,9 +1,8 @@
-import React from 'react';
-import Layout from '../../../components/Layout';
 import Image from 'next/image';
-import data from '../../../utils/data';
 import { useRouter } from 'next/router';
+import React from 'react';
 import SubLayout from '../../../components/SubLayout';
+import data from '../../../utils/data';
 
 export default function SubService() {
   const router = useRouter();

@@ -23,9 +23,9 @@ const DropdownMenu = ({ children }) => {
   };
 
   return (
-    <div className="relative" ref={dropdownRef}>
+    <div className="relative " ref={dropdownRef}>
       <button
-        className="inline-flex items-center justify-center w-full mr-6 hover:text-white text-[18px] font-[500] text-gray-200 bg-transparent rounded-md  focus:outline-none "
+        className="inline-flex items-center max-[1024px]:mt-[15px] w-full mr-6 hover:text-white text-[18px] font-[500] text-gray-200 bg-transparent rounded-md  focus:outline-none "
         onClick={toggleMenu}
       >
         {children}
@@ -41,7 +41,7 @@ const DropdownMenu = ({ children }) => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 w-48 py-2 mt-2 bg-black/50 rounded-md shadow-lg">
+        <div className="absolute left-[15%] top-4 lg:top-6 w-48 py-2 mt-2 bg-black/50 rounded-md shadow-lg">
           {data.services.map((service, i) => (
             <Link
               key={i + 0.2}
