@@ -1,83 +1,62 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { sendContactForm } from '../lib/api';
+import {
+  useToast,
+  FormControl,
+  Button,
+  FormErrorMessage,
+  Textarea,
+  Input,
+  FormLabel,
+} from '@chakra-ui/react';
+
+const initValues = { name: '', email: '', subject: '', message: '' };
+
+const initState = { isLoading: false, error: '', values: initValues };
 
 export default function Form() {
   // States for contact form fields
-  const [fullname, setFullname] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const toast = useToast();
+  const [state, setState] = useState(initState);
+  const [touched, setTouched] = useState({});
 
-  //   Form validation state
-  const [errors, setErrors] = useState({});
+  const { values, isLoading } = state;
 
-  //   Setting button text on form submission
-  const [buttonText, setButtonText] = useState('Send');
+  const onBlur = ({ target }) =>
+    setTouched((prev) => ({ ...prev, [target.name]: true }));
 
-  // Setting success or failure messages states
-  /*  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const [showFailureMessage, setShowFailureMessage] = useState(false); */
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
 
-  // Validation check method
-  const handleValidation = () => {
-    let tempErrors = {};
-    let isValid = true;
-
-    if (fullname.length <= 0) {
-      tempErrors['fullname'] = true;
-      isValid = false;
-    }
-    if (email.length <= 0) {
-      tempErrors['email'] = true;
-      isValid = false;
-    }
-    /*  if (subject.length <= 0) {
-      tempErrors['subject'] = true;
-      isValid = false;
-    } */
-    if (message.length <= 0) {
-      tempErrors['message'] = true;
-      isValid = false;
-    }
-
-    setErrors({ ...tempErrors });
-    console.log('errors', errors);
-    return isValid;
-  };
-
-  //   Handling form submit
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    let isValidForm = handleValidation();
-
-    if (isValidForm) {
-      setButtonText('Sending');
-      const res = await fetch('/api/sendgrid', {
-        body: JSON.stringify({
-          email: email,
-          fullname: fullname,
-          message: message,
-        }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        method: 'POST',
+  const onSubmit = async () => {
+    setState((prev) => ({
+      ...prev,
+      isLoading: true,
+    }));
+    try {
+      await sendContactForm(values);
+      setTouched({});
+      setState(initState);
+      toast({
+        title: 'Message sent.',
+        status: 'success',
+        duration: 2000,
+        position: 'top',
       });
-
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        /*  setShowSuccessMessage(false);
-        setShowFailureMessage(true); */
-        setButtonText('Send');
-        return;
-      }
-      /* etShowSuccessMessage(true);
-      setShowFailureMessage(false); */
-      setButtonText('Send');
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
     }
-    console.log(fullname, email, message);
   };
 
   return (
@@ -90,14 +69,14 @@ export default function Form() {
           fill={true}
         />
       </div>
-      <form
+      {/*  <form
         className="m-auto rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white/[0.8] dark:bg-blue-500  z-900 center-item form_responsive "
         onSubmit={handleSubmit}
       >
         <h1 className="text-2xl font-bold dark:text-gray-50">Send a message</h1>
 
         <label
-          for="fullname"
+          for="name"
           className="text-slate-700 font-[500] mt-8 dark:text-gray-50"
         >
           Full name
@@ -105,8 +84,8 @@ export default function Form() {
         </label>
         <input
           type="text"
-          value={fullname}
-          onChange={(e) => setFullname(e.target.value)}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           name="name"
           className="bg-transparent border-b border-black py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
         />
@@ -155,7 +134,79 @@ export default function Form() {
             </svg>
           </button>
         </div>
-      </form>
+      </form> */}
+      <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
+        <FormLabel>Name</FormLabel>
+        <Input
+          type="text"
+          name="name"
+          errorBorderColor="red.300"
+          value={values.name}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        <FormErrorMessage>Required</FormErrorMessage>
+      </FormControl>
+
+      <FormControl isRequired isInvalid={touched.email && !values.email} mb={5}>
+        <FormLabel>Email</FormLabel>
+        <Input
+          type="email"
+          name="email"
+          errorBorderColor="red.300"
+          value={values.email}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        <FormErrorMessage>Required</FormErrorMessage>
+      </FormControl>
+
+      <FormControl
+        mb={5}
+        isRequired
+        isInvalid={touched.subject && !values.subject}
+      >
+        <FormLabel>Subject</FormLabel>
+        <Input
+          type="text"
+          name="subject"
+          errorBorderColor="red.300"
+          value={values.subject}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        <FormErrorMessage>Required</FormErrorMessage>
+      </FormControl>
+
+      <FormControl
+        isRequired
+        isInvalid={touched.message && !values.message}
+        mb={5}
+      >
+        <FormLabel>Message</FormLabel>
+        <Textarea
+          type="text"
+          name="message"
+          rows={4}
+          errorBorderColor="red.300"
+          value={values.message}
+          onChange={handleChange}
+          onBlur={onBlur}
+        />
+        <FormErrorMessage>Required</FormErrorMessage>
+      </FormControl>
+
+      <Button
+        variant="outline"
+        colorScheme="blue"
+        isLoading={isLoading}
+        disabled={
+          !values.name || !values.email || !values.subject || !values.message
+        }
+        onClick={onSubmit}
+      >
+        Submit
+      </Button>
     </div>
   );
 }

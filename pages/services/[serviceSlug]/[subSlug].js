@@ -25,7 +25,7 @@ export default function SubService() {
               >
                 <h1>{subI.name}</h1>
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg brightness-90"
                   src={subI.image}
                   alt={subI.key}
                   fill={true}

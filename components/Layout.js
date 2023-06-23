@@ -6,7 +6,7 @@ export default function Layout({ title, children }) {
   return (
     <>
       <Head>
-        <title>{title ? title : 'concinity-kitchen'}</title>
+        <title>{title ? title : 'Kenny-Kitchen'}</title>
         <meta name="description" content=" Ecommerce Website" />
       </Head>
       <div>

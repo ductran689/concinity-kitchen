@@ -25,7 +25,7 @@ export default function ServiceScreen() {
                 key={`${sub.key}`}
               >
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg brightness-90"
                   src={sub.image}
                   alt={sub.name}
                   fill={true}
