@@ -70,7 +70,7 @@ export default function Home() {
         border="1px"
         borderColor="black"
       >
-        <Heading>Contact</Heading>
+        <Heading color="black">Contact</Heading>
         {error && (
           <Text color="red.300" my={4} fontSize="xl">
             {error}
@@ -87,6 +87,7 @@ export default function Home() {
             value={values.name}
             onChange={handleChange}
             onBlur={onBlur}
+            borderColor="black"
           />
           <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
@@ -105,6 +106,7 @@ export default function Home() {
             value={values.email}
             onChange={handleChange}
             onBlur={onBlur}
+            borderColor="black"
           />
           <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
@@ -123,6 +125,7 @@ export default function Home() {
             value={values.subject}
             onChange={handleChange}
             onBlur={onBlur}
+            borderColor="black"
           />
           <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
@@ -142,6 +145,7 @@ export default function Home() {
             value={values.message}
             onChange={handleChange}
             onBlur={onBlur}
+            borderColor="black"
           />
           <FormErrorMessage>Required</FormErrorMessage>
         </FormControl>
