@@ -78,8 +78,9 @@ export default function Home() {
         )}
 
         <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
-          <FormLabel>Name</FormLabel>
+          <FormLabel color="black">Name</FormLabel>
           <Input
+            color="black"
             type="text"
             name="name"
             errorBorderColor="red.300"
@@ -95,8 +96,9 @@ export default function Home() {
           isInvalid={touched.email && !values.email}
           mb={5}
         >
-          <FormLabel>Email</FormLabel>
+          <FormLabel color="black">Email</FormLabel>
           <Input
+            color="black"
             type="email"
             name="email"
             errorBorderColor="red.300"
@@ -112,9 +114,10 @@ export default function Home() {
           isRequired
           isInvalid={touched.subject && !values.subject}
         >
-          <FormLabel>Subject</FormLabel>
+          <FormLabel color="black">Subject</FormLabel>
           <Input
             type="text"
+            color="black"
             name="subject"
             errorBorderColor="red.300"
             value={values.subject}
@@ -129,8 +132,9 @@ export default function Home() {
           isInvalid={touched.message && !values.message}
           mb={5}
         >
-          <FormLabel>Message</FormLabel>
+          <FormLabel color="black">Message</FormLabel>
           <Textarea
+            color="black"
             type="text"
             name="message"
             rows={4}
