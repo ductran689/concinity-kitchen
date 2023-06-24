@@ -534,7 +534,7 @@ const data = {
         "After obtaining 3 quotes for our new kitchen, Built to Desire was not only the most affordable but the materials used were of better quality. Mark was professional and courteous, spending time going through our needs and wants. Mark and Angela always answered my calls and emails along the way. I wouldn't hesitate recommenkeyng Built to Desire to anyone in the future",
     },
     {
-      name: 'Ken Phan – Fairfield',
+      name: 'Ken Dollimore – Fairfield',
       key: 2,
       content:
         'A professional approach to all aspects of getting our new kitchen exactly as we wanted it.',

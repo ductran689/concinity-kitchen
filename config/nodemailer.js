@@ -1,6 +1,7 @@
 import nodemailer from 'nodemailer';
 
 const email = process.env.EMAIL;
+const toEmail = process.env.EMAIL_USER;
 const pass = process.env.EMAIL_PASS;
 
 export const transporter = nodemailer.createTransport({
@@ -13,5 +14,5 @@ export const transporter = nodemailer.createTransport({
 
 export const mailOptions = {
   from: email,
-  to: email,
+  to: toEmail,
 };

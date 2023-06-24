@@ -17,7 +17,7 @@ export default function Home() {
     '/images/kit-15.webp',
   ];
   return (
-    <Layout title="concinity">
+    <Layout title="Kenny Kitchen">
       <div className="carousel w-full mx-auto ">
         <Carousel loop>
           {images.map((src, i) => {

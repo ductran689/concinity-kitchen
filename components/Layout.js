@@ -13,7 +13,9 @@ export default function Layout({ title, children }) {
         <header className=" w-full  z-10 bg-transparent fixed">
           <Header></Header>
         </header>
-        <main className="  m-auto  bg-slate-200 w-full">{children}</main>
+        <main className="  m-auto  bg-slate-200 w-full pb-[100px]">
+          {children}
+        </main>
         <Footer></Footer>
       </div>
     </>

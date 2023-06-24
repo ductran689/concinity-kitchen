@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className=" w-full  bg-black">
+    <footer className=" w-full  bg-black ">
       <div className="footer_content flex justify-around items-center shadow-inner pt-[70px] mb-[50px]">
         <div className="contact_detail ">
           <h3 className="text-gray-200 mb-[20px] font-[500] text-[20px] h3-responsive">
