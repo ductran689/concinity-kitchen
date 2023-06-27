@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <footer className=" w-full  bg-black ">
       <div className="footer_content flex justify-around items-center shadow-inner pt-[70px] mb-[50px]">
-        <div className="contact_detail ">
-          <h3 className="text-gray-200 mb-[20px] font-[500] text-[20px] h3-responsive">
+        <div className="contact_detail ml-[4px] ">
+          <h3 className="text-gray-200  mb-[20px] font-[500] text-[20px] h3-responsive">
             GET IN TOUCH
           </h3>
           <p>
@@ -19,12 +19,12 @@ export default function Footer() {
             </span>
           </p>
         </div>
-        <div className="trading_hour">
-          <h3 className="text-gray-200 font-[500] mb-[20px] text-[20px] h3-responsive">
+        <div className="trading_hour mr-[4px]">
+          <h3 className="text-gray-200 text-right font-[500] mb-[20px] text-[20px] h3-responsive">
             TRADING HOURS
           </h3>
-          <p>
-            <span className=" text-footer-responsive">Mon- Sat: </span>
+          <p className="text-right">
+            <span className=" text-footer-responsive ">Mon- Sat: </span>
             <span className=" text-footer-responsive">7am - 5pm</span> <br />
             {/*   <span className=" text-footer-responsive ">Sat: </span>
               <span className=" text-footer-responsive">

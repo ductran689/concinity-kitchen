@@ -7,7 +7,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-x-6 bg-black/50">
+    <nav className="flex items-center justify-between flex-wrap p-x-6 bg-black/50 h-[60px]">
       <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
         <Image
           className="rounded-t-lg  fill-slate-700"
@@ -60,8 +60,10 @@ function Header() {
             Promotion
           </Link>
 
-          <Link href="#form_section" className="text-header">
-            Contact
+          <Link href="/quote" className=" ">
+            <p className="text-header border-solid border-2 px-1 w-fit hover:bg-white hover:text-slate-500">
+              FREE Quote
+            </p>
           </Link>
         </div>
       </div>

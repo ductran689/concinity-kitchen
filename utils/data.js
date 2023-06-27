@@ -531,13 +531,19 @@ const data = {
       name: 'Warner – Moss Vale',
       key: 1,
       content:
-        "After obtaining 3 quotes for our new kitchen, Built to Desire was not only the most affordable but the materials used were of better quality. Mark was professional and courteous, spending time going through our needs and wants. Mark and Angela always answered my calls and emails along the way. I wouldn't hesitate recommenkeyng Built to Desire to anyone in the future",
+        'I cannot express enough how delighted I am with the final result. My new kitchen is a true masterpiece, seamlessly blending style, functionality, and innovation. It has become the heart of my home, and I find myself constantly receiving compliments from friends and family.',
     },
     {
       name: 'Ken Dollimore – Fairfield',
       key: 2,
       content:
-        'A professional approach to all aspects of getting our new kitchen exactly as we wanted it.',
+        'The team at Kenny Kitchen was always approachable and responsive. They promptly addressed any concerns or questions I had throughout the process, ensuring open lines of communication. Their dedication to customer satisfaction was evident at every interaction, and they went above and beyond to exceed my expectations.',
+    },
+    {
+      name: 'Helen Howard – Wollongong',
+      key: 2,
+      content:
+        'The team at Kenny Kitchen demonstrated great attention to detail, and their craftsmanship was outstanding. They worked diligently, making sure every aspect of the renovation was executed with precision and care.',
     },
   ],
   promotion: [

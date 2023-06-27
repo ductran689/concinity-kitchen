@@ -63,14 +63,17 @@ export default function Home() {
   return (
     <div id="form_section">
       <Container
-        maxW="450px"
-        mt={12}
+        maxW="750px"
+        mt="20px"
+        mb="50px"
         bg="white"
         borderRadius="10px"
         border="1px"
         borderColor="black"
       >
-        <Heading color="black">Contact</Heading>
+        <Heading color="black" mt={10}>
+          Book Free Measure & Quote
+        </Heading>
         {error && (
           <Text color="red.300" my={4} fontSize="xl">
             {error}
@@ -158,7 +161,7 @@ export default function Home() {
             !values.name || !values.email || !values.subject || !values.message
           }
           onClick={onSubmit}
-          mb="10px"
+          mb={10}
         >
           Submit
         </Button>
