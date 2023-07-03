@@ -26,7 +26,7 @@ export default function SubLayout({ topic, children }) {
               className="extra_col w-[30%] p-8 max-[880px]:w-[95%] max-[562px]:p-2"
               key={i}
             >
-              <h3 className="h3-primary text-center font-[500] mb-[20px]">
+              <h3 className="h3-primary text-center font-[500] mb-[20px] text-slate-700">
                 {extra.h3}
               </h3>
               <p className="lg:text-[18px] md:text-[18px] font-[500] text-gray-800 min-[320px]:text-[16px] text-left">
