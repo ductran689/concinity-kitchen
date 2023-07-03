@@ -1,16 +1,14 @@
 import React from 'react';
 /* import Layout from '../../components/Layout'; */
-import Image from 'next/image';
 /* import text from '../../utils/text'; */
-import data from '../../utils/data';
-import Carousel from '../../components/Carousel';
-import Link from 'next/link';
+import Projects from '../../components/Projects';
 import SubLayout from '../../components/SubLayout';
+import b4a from '../../utils/b4a';
 
 export default function index() {
   return (
     <SubLayout topic={'Our Projects'}>
-      <div className="carousel w-full mx-auto lg:h-[800px] ">
+      {/* <div className="carousel w-full mx-auto lg:h-[800px] ">
         <Carousel loop>
           {data.promotion.map((promo, i) => {
             return (
@@ -36,6 +34,11 @@ export default function index() {
             );
           })}
         </Carousel>
+      </div> */}
+      <div className="grid grid-cols-2 gap-6 mb-8 ">
+        {b4a.map((project) => {
+          return <Projects project={project} key={project.key}></Projects>;
+        })}
       </div>
     </SubLayout>
   );

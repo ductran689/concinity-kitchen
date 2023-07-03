@@ -96,11 +96,11 @@ const data = {
           pics: [
             {
               key: 'nk1',
-              image: '/images/con_kit_11.jpg',
+              image: '/images/kc-1.webp',
             },
             {
               key: 'nk2',
-              image: '/images/con_kit_12.jpg',
+              image: '/images/kc-2.webp',
             },
             {
               key: 'nk3',
@@ -108,11 +108,11 @@ const data = {
             },
             {
               key: 'nk4',
-              image: '/images/con_kit_9.jpg',
+              image: '/images/kc-3.webp',
             },
             {
               key: 'nk5',
-              image: '/images/con_kit_6.jpg',
+              image: '/images/kc-4.webp',
             },
             {
               key: 'nk6',
@@ -130,6 +130,30 @@ const data = {
               key: 'nk9',
               image: '/images/dark_kit_3.jpg',
             },
+            {
+              key: 'nk10',
+              image: '/images/kc-5.webp',
+            },
+            {
+              key: 'nk11',
+              image: '/images/kc-6.webp',
+            },
+            {
+              key: 'nk12',
+              image: '/images/kc-7.webp',
+            },
+            {
+              key: 'nk13',
+              image: '/images/kc-8.webp',
+            },
+            {
+              key: 'nk14',
+              image: '/images/kc-9.webp',
+            },
+            {
+              key: 'nk15',
+              image: '/images/kc-10.webp',
+            },
           ],
         },
         {
@@ -139,8 +163,25 @@ const data = {
           image: '/images/con_kit_6.jpg',
           pics: [
             {
-              key: '',
-              image: '',
+              key: 'rn-1',
+              image: '/images/rn-1.webp',
+            },
+
+            {
+              key: 'rn-3',
+              image: '/images/rn-3.webp',
+            },
+            {
+              key: 'rn-4',
+              image: '/images/rn-4.webp',
+            },
+            {
+              key: 'rn-5',
+              image: '/images/rn-5.webp',
+            },
+            {
+              key: 'rn-6',
+              image: '/images/rn-6.webp',
             },
           ],
         },
@@ -151,8 +192,36 @@ const data = {
           image: '/images/con_kit_4.jpg',
           pics: [
             {
-              key: '',
-              image: '',
+              key: 'fb-1',
+              image: '/images/fb-1.webp',
+            },
+            {
+              key: 'fb-2',
+              image: '/images/fb-2.webp',
+            },
+            {
+              key: 'fb-3',
+              image: '/images/fb-3.webp',
+            },
+            {
+              key: 'fb-4',
+              image: '/images/fb-4.webp',
+            },
+            {
+              key: 'fb-5',
+              image: '/images/fb-5.webp',
+            },
+            {
+              key: 'fb-6',
+              image: '/images/fb-6.webp',
+            },
+            {
+              key: 'fb-7',
+              image: '/images/fb-7.webp',
+            },
+            {
+              key: 'fb-8',
+              image: '/images/fb-8.webp',
             },
           ],
         },

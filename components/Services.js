@@ -12,7 +12,7 @@ import BtnCard from '../components/BtnCard';
 export default function Services() {
   return (
     <div className="services  mt-[100px] mb-[100px] " id="service_section">
-      <h1 className="h1-primary">OUR SERVICVE</h1>
+      <h1 className="h1-primary text-slate-700">OUR SERVICVE</h1>
       <p className="text-primary mb-[50px]">
         Perfect Kitchens provide a full range of services covering everything
         you need to create a beautiful new kitchen. Select a service below to
