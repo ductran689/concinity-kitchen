@@ -35,7 +35,7 @@ export default function index() {
           })}
         </Carousel>
       </div> */}
-      <div className="grid grid-cols-2 gap-6 mb-8 ">
+      <div className="grid lg:grid-cols-2 max-[768px]:grid-cols-1 gap-6 mb-8 ">
         {b4a.map((project) => {
           return <Projects project={project} key={project.key}></Projects>;
         })}
