@@ -18,13 +18,28 @@ const CarouselControls = (props: Props) => {
         /* disabled={!props.canScrollPrev} */
         className=""
       >
-        <Image
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2.5}
+          stroke="#ffffff"
+          className="w-8 h-8 max-[578px]:hidden"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+
+        {/* <Image
           className="rounded-t-lg"
           src="/images/round-line arrow-white.svg"
           alt="{service.name}"
           width={60}
           height={10}
-        />
+        /> */}
       </div>
       <div
         onClick={() => {
@@ -34,13 +49,28 @@ const CarouselControls = (props: Props) => {
         }}
         className=""
       >
-        <Image
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2.5}
+          stroke="#ffffff"
+          className="w-8 h-8 max-[578px]:hidden"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+          />
+        </svg>
+
+        {/*    <Image
           className="rotate-180"
           src="/images/round-line arrow-white.svg"
           alt="{service.name}"
           width={60}
           height={10}
-        />
+        /> */}
       </div>
       {/* <button
         onClick={() => {

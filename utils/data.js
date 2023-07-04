@@ -160,7 +160,7 @@ const data = {
           name: 'Renovation',
           slug: 'renovation',
           key: 'kitchenrenovation',
-          image: '/images/con_kit_6.jpg',
+          image: '/images/kit-18.webp',
           pics: [
             {
               key: 'rn-1',
@@ -232,8 +232,24 @@ const data = {
           image: '/images/con_kit_3.jpg',
           pics: [
             {
-              key: '',
-              image: '',
+              key: 'c2s-1',
+              image: '/images/c2s-1.webp',
+            },
+            {
+              key: 'c2s-2',
+              image: '/images/c2s-2.webp',
+            },
+            {
+              key: 'c2s-3',
+              image: '/images/c2s-3.webp',
+            },
+            {
+              key: 'c2s-4',
+              image: '/images/c2s-4.webp',
+            },
+            {
+              key: 'c2s-6',
+              image: '/images/c2s-6.webp',
             },
           ],
         },

@@ -31,22 +31,22 @@ export default function Testimonials() {
                 className="relative lg:h-[400px] md:h-[300px] max-[768px]:h-[300px] w-full flex-[0_0_100%] bg-black/75 "
                 key={i}
               >
-                <div className="pro-content center-item bg-white rounded-lg m-auto border-solid border-2 w-[70%] h-[90%] shadow-xl flex flex-col justify-center items-center">
-                  <h2 className="text-slate-800 font-[500] text-[30px] max-[768px]:text-[20px] text-center ">
+                <div className="pro-content center-item bg-white rounded-lg m-auto border-solid border-2 w-[90%] h-[90%] shadow-xl flex flex-col justify-center items-center">
+                  <h2 className="text-slate-800 font-[500] text-[30px] max-[578px]:text-[18px] text-center ">
                     {promo.name}
                   </h2>
-                  <p className=" text-slate-800 font-[400] text-[20px] max-[670px]:text-[16px] text-center max-[768px]:mb-[20px] mb-[50px] ">
+                  <p className=" text-slate-800 font-[400] text-[20px] max-[670px]:text-[14px] text-center max-[768px]:mb-[20px] mb-[50px] ">
                     {promo.content}
                   </p>
                   <div className="img-content w-[70%] h-[50%] max-[565px]:h-[40%] max-[400px]:h-[30%] relative mx-auto ">
-                    <Link href="https://www.harveynorman.com.au/westinghouse-60cm-13-place-setting-stainless-steel-freestanding-dishwasher.html?CAWELAID=720013240000514751&gclid=Cj0KCQjw7aqkBhDPARIsAKGa0oLHnMll6o7bmusosJxGOjZ1NCxLQ43HCtd2bj177qICLN_9hsqCEzwaApMREALw_wcB&gclsrc=aw.ds">
+                    {/*  <Link href="https://www.harveynorman.com.au/westinghouse-60cm-13-place-setting-stainless-steel-freestanding-dishwasher.html?CAWELAID=720013240000514751&gclid=Cj0KCQjw7aqkBhDPARIsAKGa0oLHnMll6o7bmusosJxGOjZ1NCxLQ43HCtd2bj177qICLN_9hsqCEzwaApMREALw_wcB&gclsrc=aw.ds">
                       <Image
                         className="rounded-t-lg  fill-slate-700 "
                         src={promo.image}
                         alt={promo.name}
                         fill={true}
                       />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

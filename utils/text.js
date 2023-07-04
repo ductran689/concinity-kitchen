@@ -28,6 +28,16 @@ const text = {
         'Unleash your culinary creativity in a kitchen tailored just for you. At Kenny Kitchen, we understand that every detail matters, which is why we offer innovative designs and meticulous craftsmanship to ensure your dream kitchen becomes a reality.',
     },
   ],
+  promo: [
+    {
+      name: 'promo1',
+      text: 'FREE a stainless steel diswasher for any quote over $15,999',
+    },
+    {
+      name: 'promo2',
+      text: 'FREE quote ',
+    },
+  ],
 };
 
 export default text;

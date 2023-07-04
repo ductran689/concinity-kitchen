@@ -43,7 +43,7 @@ function Header() {
           isOpen ? 'block' : 'hidden'
         }`}
       >
-        <div className="text-sm lg:flex lg:justify-end">
+        <div className="text-sm lg:flex lg:justify-end max-[1024px]:bg-black/50 max-[1024px]:pl-[10px] max-[1024px]:pb-[10px] max-[1024px]:pt-[5px] ">
           <Link href="/" className="text-header">
             Home
           </Link>

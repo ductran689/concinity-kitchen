@@ -39,7 +39,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <p className="text-center pb-[70px] text-gray-200 text-xl shadow-inner ">
+      <p className="text-center pb-[70px] text-gray-200 text-xl shadow-inner max-[640px]:text-[16px] ">
         Copyright 2023 Duc Tran
       </p>
     </footer>

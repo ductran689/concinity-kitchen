@@ -17,7 +17,7 @@ export default function SubService() {
     if (sub) {
       return (
         <SubLayout topic={sub.name}>
-          <div className="service_gallery grid-flow-cols  gap-6 mb-[100px] mx-[20px] grid-lg-cols grid-md-cols grid-sm-cols ">
+          <div className="service_gallery grid-flow-cols  gap-6  mx-[20px] grid-lg-cols grid-md-cols grid-sm-cols ">
             {sub.pics.map((subI, i) => (
               <div
                 className="sub_container h-[400px] max-[433px]:h-[300px] relative "

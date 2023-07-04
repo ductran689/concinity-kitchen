@@ -13,7 +13,7 @@ export default function Layout({ title, children }) {
         <header className=" w-full  z-10 bg-transparent fixed">
           <Header></Header>
         </header>
-        <main className="  m-auto  bg-slate-200 w-full pb-[50px]">
+        <main className="  m-auto  bg-slate-50 w-full pb-[50px]">
           {children}
         </main>
         <Footer></Footer>
