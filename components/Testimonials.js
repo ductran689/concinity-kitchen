@@ -1,7 +1,4 @@
 import data from '@/utils/data';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
 import Carousel from './Carousel';
 
 export default function Testimonials() {
