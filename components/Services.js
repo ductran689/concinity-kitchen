@@ -19,13 +19,13 @@ export default function Services() {
         find out more.
       </p>
       {/* services-cards */}
-      <div className=" grid mt-4 gap-x-2 gap-y-8 grid-cols-1 md:grid-cols-4 lg:grid-cols-4 lg:justify-self-center lg:justify-items-center  sm:justify-self-center sm: justify-items-center">
+      <div className=" grid mt-4  gap-y-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:justify-self-center lg:justify-items-center  sm:justify-self-center sm: justify-items-center">
         {data.services.map((service, i) => (
           <div
-            className="service_card w-[90%] border-solid border-transparent  border-2 bg-white  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative hover:overflow-hidden  overflow-hidden"
+            className="service_card lg:w-[90%] md:w-[70%] max-[768px]:w-[60%] max-[568px]:w-[80%] border-solid border-transparent  border-2 bg-white  border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative hover:overflow-hidden  overflow-hidden"
             key={i}
           >
-            <div className="image_container relative w-full lg:min-h-[300px] md:min-h[250] min-h-[250px] hover:scale-105  ease-in duration-100 overflow-hidden">
+            <div className="image_container relative w-full lg:min-h-[350px] md:min-h[250] min-h-[250px] hover:scale-105  ease-in duration-100 overflow-hidden">
               <Link href={`/services/${service.slug}`}>
                 <Image
                   className="rounded-t-lg  fill-slate-700 brightness-90"

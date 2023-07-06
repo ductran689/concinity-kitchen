@@ -60,33 +60,6 @@ const data = {
       name: 'Kitchen',
       slug: 'kitchen',
       cover: '/images/cover-1.webp',
-      /*   sub_images: [
-         {
-          name: 'kit-1',
-          key: 'kit-1',
-          image: '/images/kit-1.jpg',
-        },
-        {
-          name: 'kit-2',
-          key: 'kit-2',
-          image: '/images/kit-2.jpg',
-        },
-        {
-          name: 'kit-3',
-          key: 'kit-3',
-          image: '/images/kit-3.jpg',
-        },
-        {
-          name: 'kit-4',
-          key: 'kit-4',
-          image: '/images/kit-4.jpg',
-        },
-        {
-          name: 'kit-5',
-          key: 'kit-5',
-          image: '/images/kit-5.jpg',
-        },
-      ], */
       subServices: [
         {
           name: 'New Kitchen',
@@ -154,6 +127,18 @@ const data = {
               key: 'nk15',
               image: '/images/kc-10.webp',
             },
+            {
+              key: 'nk16',
+              image: '/images/kit-25.jpg',
+            },
+            {
+              key: 'nk17',
+              image: '/images/kit-24.jpg',
+            },
+            {
+              key: 'nk18',
+              image: '/images/kit-23.jpg',
+            },
           ],
         },
         {
@@ -185,46 +170,7 @@ const data = {
             },
           ],
         },
-        {
-          name: 'Flat Back Cabinet',
-          slug: 'flatback_cabinet',
-          key: 'flatback',
-          image: '/images/con_kit_4.jpg',
-          pics: [
-            {
-              key: 'fb-1',
-              image: '/images/fb-1.webp',
-            },
-            {
-              key: 'fb-2',
-              image: '/images/fb-2.webp',
-            },
-            {
-              key: 'fb-3',
-              image: '/images/fb-3.webp',
-            },
-            {
-              key: 'fb-4',
-              image: '/images/fb-4.webp',
-            },
-            {
-              key: 'fb-5',
-              image: '/images/fb-5.webp',
-            },
-            {
-              key: 'fb-6',
-              image: '/images/fb-6.webp',
-            },
-            {
-              key: 'fb-7',
-              image: '/images/fb-7.webp',
-            },
-            {
-              key: 'fb-8',
-              image: '/images/fb-8.webp',
-            },
-          ],
-        },
+
         {
           name: 'Cut to Size',
           slug: 'cut2size',
@@ -258,6 +204,40 @@ const data = {
           slug: 'cabinetpreface',
           key: 'cabipreface',
           image: '/images/con_kit_2.jpg',
+          slider: [
+            {
+              name: 'rf-1',
+              img_1: '/images/rf-1a.webp',
+              img_2: '/images/rf-1b.webp',
+              key: 'rf-1',
+              location: 'RockDale',
+              desc: '',
+            },
+            {
+              name: 'rf-2',
+              img_1: '/images/rf-2a.webp',
+              img_2: '/images/rf-2b.webp',
+              key: 'rf-2',
+              location: 'Cabramatta',
+              desc: '',
+            },
+            {
+              name: 'rf-3',
+              img_1: '/images/rf-3a.webp',
+              img_2: '/images/rf-3b.webp',
+              key: 'rf-3',
+              location: 'Bulli',
+              desc: '',
+            },
+            {
+              name: 'rf-4',
+              img_1: '/images/rf-4a.webp',
+              img_2: '/images/rf-4b.webp',
+              key: 'rf-4',
+              location: 'Bellambi',
+              desc: '',
+            },
+          ],
           pics: [
             {
               key: '',
@@ -337,54 +317,45 @@ const data = {
         'Unleash your imagination to explore the possibilities of your dream bathroom. Wake up to a Perfect Kitchens’ exclusive vanity',
     },
     {
-      name: 'Custom Joinery',
-      slug: 'custom',
+      name: 'Flatpack Cabinet',
+      slug: 'fb',
       cover: '/images/cover-3.webp',
       sub_images: [
+        { name: 'fb-1', key: 'fb-1', image: '/images/fb-1.webp' },
         {
-          name: 'Cus-1',
-          key: 'cus-1',
-          image: '/images/c-2.webp',
+          name: 'fb-2',
+          key: 'fb-2',
+          image: '/images/fb-2.webp',
         },
         {
-          name: 'Cus-2',
-          key: 'cus-2',
-          image: '/images/c-3.webp',
+          name: 'fb-3',
+          key: 'fb-3',
+          image: '/images/fb-3.webp',
         },
         {
-          name: 'Cus-3',
-          key: 'cus-3',
-          image: '/images/c-4.webp',
+          name: 'fb-4',
+          key: 'fb-4',
+          image: '/images/fb-4.webp',
         },
         {
-          name: 'Cus-4',
-          key: 'cus-4',
-          image: '/images/c-5.webp',
+          name: 'fb-5',
+          key: 'fb-5',
+          image: '/images/fb-5.webp',
         },
         {
-          name: 'Cus-6',
-          key: 'cus-6',
-          image: '/images/c-6.webp',
+          name: 'fb-6',
+          key: 'fb-6',
+          image: '/images/fb-6.webp',
         },
         {
-          name: 'Cus-7',
-          key: 'cus-7',
-          image: '/images/c-7.webp',
+          name: 'fb-7',
+          key: 'fb-7',
+          image: '/images/fb-7.webp',
         },
         {
-          name: 'Cus-8',
-          key: 'cus-8',
-          image: '/images/c-8.webp',
-        },
-        {
-          name: 'Cus-9',
-          key: 'cus-9',
-          image: '/images/c-9.webp',
-        },
-        {
-          name: 'Cus-10',
-          key: 'cus-10',
-          image: '/images/c-10.webp',
+          name: 'fb-8',
+          key: 'fb-8',
+          image: '/images/fb-8.webp',
         },
       ],
       subServices: [
@@ -402,31 +373,10 @@ const data = {
         'Perfect Kitchens’ specialist cabinet makers and designers will let you achieve that unique custom touch to make your home truly yours',
     },
     {
-      name: 'Storage',
-      slug: 'storage',
+      name: 'Custom Joinery',
+      slug: 'custom',
       cover: '/images/cover-4.webp',
-      /* sub_images: [
-        {
-          name: 'sto-1',
-          key: 'sto-1',
-          image: '/images/kit-26.jpg',
-        },
-        {
-          name: 'sto-2',
-          key: 'sto-2',
-          image: '/images/kit-25.jpg',
-        },
-        {
-          name: 'sto-3',
-          key: 'sto-3',
-          image: '/images/kit-24.jpg',
-        },
-        {
-          name: 'sto-4',
-          key: 'sto-4',
-          image: '/images/kit-23.jpg',
-        },
-      ], */
+
       subServices: [
         {
           name: 'Garage',
@@ -441,10 +391,6 @@ const data = {
             {
               key: 's-2',
               image: '/images/s-2.webp',
-            },
-            {
-              key: 's-3',
-              image: '/images/s-3.webp',
             },
 
             {
@@ -470,10 +416,6 @@ const data = {
             {
               key: 's-14',
               image: '/images/s-14.webp',
-            },
-            {
-              key: 's-17',
-              image: '/images/s-17.webp',
             },
           ],
         },
@@ -521,8 +463,36 @@ const data = {
             },
           ],
         },
+        {
+          name: 'Storage',
+          slug: 'storage',
+          key: 'sto',
+          image: '/images/w-1.webp',
+          pics: [
+            {
+              name: 'sto-7',
+              key: 'sto-7',
+              image: '/images/c-7.webp',
+            },
+            {
+              name: 'sto-8',
+              key: 'sto-8',
+              image: '/images/c-8.webp',
+            },
+            {
+              name: 'sto-9',
+              key: 'sto-9',
+              image: '/images/c-9.webp',
+            },
+            {
+              name: 'sto-10',
+              key: 'sto-10',
+              image: '/images/c-10.webp',
+            },
+          ],
+        },
       ],
-      key: 'storage',
+      key: 'cus',
       image: '/images/s-s.jpg',
       content:
         'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',
@@ -567,7 +537,7 @@ const data = {
           ],
         },
       ],
-      key: 'storage',
+      key: 'design',
       image: '/images/dark_kit_7.jpg',
       content:
         'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',

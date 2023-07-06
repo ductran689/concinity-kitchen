@@ -17,7 +17,7 @@ export default function BtnCard({ href, children, service }) {
   return (
     <div className="service_content center-item flex flex-col justify-center items-center">
       <div className="describtion ">
-        <h2 className="h2-primary text-white">{children}</h2>
+        <h2 className="h2-primary text-white font-[500]">{children}</h2>
       </div>
 
       <div

@@ -3,12 +3,12 @@ import Layout from '@/components/Layout';
 import Carousel from '../components/Carousel';
 import Form from '../components/Form';
 /* import ProductItem from '../components/ProductItem'; */
+import text from '@/utils/text';
 import Image from 'next/image';
 import About from '../components/About';
 import Services from '../components/Services';
+import Form_btn from '../components/Form_btn';
 import Testimonials from '../components/Testimonials';
-import text from '@/utils/text';
-import Link from 'next/link';
 /* import { getAbout, getAllPics, getCarousel } from '../prisma/admin'; */
 
 export default function Home() {
@@ -60,25 +60,13 @@ export default function Home() {
                       <span>{text.text}</span>
                     </p>
                   ))}
-                  <Link href="#form_section" scroll={false}>
-                    <button className="border-white border-[2px] text-white p-2 lg:text-[25px] font-[400] bg-black/50 mt-[10px] flex items-center hover:text-slate-700 hover:bg-white/50 md:text-[20px] max-[768px]:text-[16px]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2.5}
-                        stroke="currentColor"
-                        className="lg:w-6 lg:h-6 md:w-5 md:h-5 max-[768px]:w-4 max-[768px]:h-4"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
-                        />
-                      </svg>
-                      Contact Us Today
-                    </button>
-                  </Link>
+                  <Form_btn
+                    href="#form_section"
+                    color="white"
+                    bg="black/50"
+                    hoverText="slate-700"
+                    hoverBg="white/50"
+                  ></Form_btn>
                 </div>
                 <Image
                   src={src}

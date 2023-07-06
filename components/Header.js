@@ -51,7 +51,9 @@ function Header() {
             Profile
           </Link>
 
-          <DropdownMenu>Services</DropdownMenu>
+          <Link href="#service_section" scroll={false}>
+            <DropdownMenu>Services</DropdownMenu>
+          </Link>
 
           <Link href="/projects" className="text-header">
             Projects

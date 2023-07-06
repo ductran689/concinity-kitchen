@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import Layout from './Layout';
+import Form_btn from '../components/Form_btn';
 
-export default function SubLayout({ topic, children }) {
+export default function SubLayout({ topic, children, btn }) {
   return (
     <Layout>
       <div className="promo_page bg-white w-[95%] m-auto">
@@ -18,6 +19,17 @@ export default function SubLayout({ topic, children }) {
           />
         </div>
         <div className="submain_content">{children}</div>
+        {btn == 'true' && (
+          <div className="flex justify-center mt-[20px]">
+            <Form_btn
+              href="/quote"
+              color="white"
+              bg="black/50"
+              hoverText="cyan-500"
+              hoverBg="black/100"
+            ></Form_btn>
+          </div>
+        )}
 
         {/*  <div className="extra-content bg-slate-100 flex flex-row justify-between items-start about_xtra_res">
           {text.extra_text_about.map((extra, i) => (

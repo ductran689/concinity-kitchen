@@ -4,7 +4,7 @@ import Form from '../../components/Form';
 
 export default function index() {
   return (
-    <SubLayout topic="FREE Quote Booking">
+    <SubLayout topic="FREE Quote Booking" btn={false}>
       <Form></Form>
     </SubLayout>
   );
