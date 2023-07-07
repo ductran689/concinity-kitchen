@@ -32,7 +32,7 @@ export default function Testimonials() {
                   <h2 className="text-slate-800 font-[500] text-[30px] max-[578px]:text-[18px] text-center ">
                     {promo.name}
                   </h2>
-                  <p className=" text-slate-800 font-[400] text-[20px] max-[670px]:text-[14px] text-center max-[768px]:mb-[20px] mb-[50px] ">
+                  <p className=" text-slate-800  text-[18px] max-[670px]:text-[14px] text-center max-[768px]:mb-[20px] mb-[50px] font-playfair ">
                     {promo.content}
                   </p>
                   <div className="img-content w-[70%] h-[50%] max-[565px]:h-[40%] max-[400px]:h-[30%] relative mx-auto ">

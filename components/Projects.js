@@ -83,7 +83,7 @@ export default function Projects({ project }) {
                   fill="#ffffff"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
-                  stroke="currentColor"
+                  stroke="#000000"
                   className="w-8 h-8 rotate-90 transform"
                 >
                   <path

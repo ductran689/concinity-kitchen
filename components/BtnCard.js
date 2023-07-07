@@ -16,9 +16,13 @@ export default function BtnCard({ href, children, service }) {
   };
   return (
     <div className="service_content center-item flex flex-col justify-center items-center">
-      <div className="describtion ">
-        <h2 className="h2-primary text-white font-[500]">{children}</h2>
-      </div>
+      <Link href={`/services/${href}`}>
+        <div className="describtion ">
+          <h2 className="h2-primary text-white font-[400] cursor-pointer font-poppinsbold">
+            {children}
+          </h2>
+        </div>
+      </Link>
 
       <div
         className=" mt-6 btn-card-lg btn "
@@ -27,7 +31,7 @@ export default function BtnCard({ href, children, service }) {
       >
         <Link href={`/services/${href}`}>
           <button className="btn-service text-center btn-primary ">
-            <p className="text-slate-200 font-medium space text-btn">
+            <p className="text-slate-200 font-medium space text-btn font-poppinsbold">
               VIEW MORE
             </p>
             <Image

@@ -25,8 +25,8 @@ export default function SubLayout({ topic, children, btn }) {
               href="/quote"
               color="white"
               bg="black/50"
-              hoverText="cyan-500"
-              hoverBg="black/100"
+              hoverText="black"
+              hoverBg="white"
             ></Form_btn>
           </div>
         )}

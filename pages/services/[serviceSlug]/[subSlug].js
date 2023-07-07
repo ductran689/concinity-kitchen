@@ -39,7 +39,7 @@ export default function SubService() {
         );
       } else {
         return (
-          <SubLayout topic={sub.name}>
+          <SubLayout topic={sub.name} btn="true">
             <div className="grid lg:grid-cols-2 max-[768px]:grid-cols-1 gap-6 mb-8 ">
               {sub.slider.map((project) => {
                 return (

@@ -22,7 +22,7 @@ const CarouselControls = (props: Props) => {
           viewBox="0 0 24 24"
           strokeWidth={2.5}
           stroke="#ffffff"
-          className="w-8 h-8 max-[578px]:hidden"
+          className=" r-arrow w-9 h-9 max-[578px]:hidden border-solid border-white border-[3px] rounded-full bg-black/50 hover:border-black hover:bg-white/50"
         >
           <path
             strokeLinecap="round"
@@ -53,7 +53,7 @@ const CarouselControls = (props: Props) => {
           viewBox="0 0 24 24"
           strokeWidth={2.5}
           stroke="#ffffff"
-          className="w-8 h-8 max-[578px]:hidden"
+          className="r-arrow w-9 h-9 max-[578px]:hidden border-solid border-white border-[3px] rounded-full bg-black/50 hover:border-black hover:bg-white/50"
         >
           <path
             strokeLinecap="round"

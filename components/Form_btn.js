@@ -5,7 +5,7 @@ export default function Form_btn({ href, color, hoverText, hoverBg, bg }) {
   return (
     <Link href={href} scroll={false}>
       <button
-        className={`border-${color} border-[2px] text-${color} p-2 lg:text-[25px] font-[400] bg-${bg} mt-[10px] flex items-center hover:text-${hoverText} hover:bg-${hoverBg} md:text-[20px] max-[768px]:text-[16px]`}
+        className={`border-${color} border-[2px] text-${color} p-2 lg:text-[25px] font-[400] bg-${bg} mt-[10px] flex items-center hover:text-${hoverText} hover:bg-${hoverBg} md:text-[20px] max-[768px]:text-[16px] hover:border-black font-poppins`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

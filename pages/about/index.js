@@ -18,8 +18,8 @@ export default function index() {
               </p>
               <div className="about_pic lg:w-[45%] md:w-[45%] max-[768px]:w-[70%] max-[768px]:mt-[50px] max-[768px]:h-[300px] h-[400px] relative ">
                 <Image
-                  className="rounded-lg object-cover brightness-75"
-                  src="/images/con_kit_12.jpg"
+                  className="rounded-lg object-cover brightness-[.85]"
+                  src="/images/kit-21.jpg"
                   alt=""
                   fill={true}
                 />
@@ -32,7 +32,7 @@ export default function index() {
               <div className="about_pic lg:w-[45%] md:w-[45%] max-[768px]:w-[70%] max-[768px]:mt-[50px] max-[768px]:h-[300px] h-[400px] relative ">
                 <Image
                   className="rounded-lg object-cover brightness-75"
-                  src="/images/con_kit_11.jpg"
+                  src="/images/kit-22.jpg"
                   alt=""
                   fill={true}
                 />

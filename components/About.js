@@ -31,7 +31,9 @@ export default function About() {
       {/* title */}
       <h2 className=" h2-responsive">New Kitchens & Kitchen Renovations</h2>
       <div className="about_context  m-auto">
-        <p className="text-primary mb-[50px] mt-[50px]">{text.about.intro}</p>
+        <p className="text-primary mb-[50px] mt-[50px] font-poppinsbold">
+          {text.about.intro}
+        </p>
 
         {/* <div className="col2">
           <p className="text-left text-xs font-thin text-gray-800">
@@ -55,7 +57,9 @@ export default function About() {
       <div className=" flex flex-col items-center justify-center mt-[50px]">
         <Link href="/about">
           <button className="bg-black  btn-primary px-[25px] py-[15px]">
-            <p className=" text-slate-100 font-medium space">LEARN MORE</p>
+            <p className=" text-slate-100 font-medium space font-poppinsboldi">
+              LEARN MORE
+            </p>
 
             <Image
               className="ml-[20px]"

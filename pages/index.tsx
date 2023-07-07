@@ -9,20 +9,15 @@ import About from '../components/About';
 import Services from '../components/Services';
 import Form_btn from '../components/Form_btn';
 import Testimonials from '../components/Testimonials';
+import data from '@/utils/data';
 /* import { getAbout, getAllPics, getCarousel } from '../prisma/admin'; */
 
 export default function Home() {
-  const images = [
-    '/images/kit-18.webp',
-    '/images/kit-17.webp',
-    '/images/kit-16.webp',
-    '/images/kit-15.webp',
-  ];
   return (
     <Layout title="Kenny Kitchen">
       <div className="carousel w-full mx-auto ">
         <Carousel loop>
-          {images.map((src, i) => {
+          {data.carousel.map((src, i) => {
             return (
               // 👇 style each individual slide.
               // relative - needed since we use the fill prop from next/image component
@@ -34,13 +29,13 @@ export default function Home() {
                 className="relative h-[800px] w-full flex-[0_0_100%]"
                 key={i}
               >
-                <div className="intro-text center-item z-50 lg:w-[80%] md:w-[90%] max-[768px]:w-[90%] h-[70%] max-[578px]:h-[50%]">
-                  <h1 className="lg:text-[60px] text-white font-[700] md:text-[50px] max-[768px]:text-[40px]">
+                <div className="intro-text bg-black/[0.3] center-item z-50 lg:w-[80%] md:w-[90%] max-[768px]:w-[90%] h-[50%] max-[578px]:h-[50%] rounded-xl">
+                  <h1 className="lg:text-[60px] text-white font-[700] md:text-[50px] max-[768px]:text-[40px] text-center">
                     Kenny Kitchen
                   </h1>
                   {text.promo.map((text) => (
                     <p
-                      className="flex mb-[10px] text-white lg:text-[30px] md:text-[25px] font-[400] max-[768px]:text-[20px] items-center justify-start"
+                      className="flex mb-[10px]  text-white lg:text-[30px] md:text-[25px] font-[400] font-poppins max-[768px]:text-[20px] items-center justify-start"
                       key={text.name}
                     >
                       <svg
@@ -60,18 +55,20 @@ export default function Home() {
                       <span>{text.text}</span>
                     </p>
                   ))}
-                  <Form_btn
-                    href="#form_section"
-                    color="white"
-                    bg="black/50"
-                    hoverText="slate-700"
-                    hoverBg="white/50"
-                  ></Form_btn>
+                  <div className="flex justify-center hover:border-black p-[5px] ">
+                    <Form_btn
+                      href="#form_section"
+                      color="white"
+                      bg="black/50"
+                      hoverText="slate-700"
+                      hoverBg="white"
+                    ></Form_btn>
+                  </div>
                 </div>
                 <Image
                   src={src}
                   fill
-                  className="object-cover brightness-[.6] "
+                  className="object-cover brightness-[1] "
                   alt={`${i}`}
                 />
               </div>

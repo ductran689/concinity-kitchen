@@ -1,46 +1,14 @@
 const data = {
-  products: [
-    {
-      name: 'First name',
-      slug: 'first-name',
-      category: 'cabinet',
-      image: '/images/cabinet_1.jpg',
-      price: 90,
-      countInStock: 10,
-    },
-    {
-      name: 'First name',
-      slug: 'first-name',
-      category: 'cabinet',
-      image: '/images/cabinet_1.jpg',
-      price: 90,
-      countInStock: 10,
-    },
-    {
-      name: 'Second name',
-      slug: 'second-name',
-      category: 'cabinet',
-      image: '/images/cabinet_2.jpg',
-      price: 290,
-      countInStock: 0,
-    },
-    {
-      name: 'Second name',
-      slug: 'second-name',
-      category: 'cabinet',
-      image: '/images/cabinet_2.jpg',
-      price: 290,
-      countInStock: 0,
-    },
-    {
-      name: 'Third name',
-      slug: 'third-name',
-      category: 'cabinet',
-      image: '/images/kitchen_1.jpg',
-      price: 120,
-      countInStock: 90,
-    },
+  carousel: [
+    '/images/kit-17.webp',
+
+    '/images/c-5.webp',
+
+    '/images/kc-2.webp',
+
+    '/images/kit-12.jpg',
   ],
+
   about_images: [
     {
       name: 'about_1',
@@ -142,7 +110,7 @@ const data = {
           ],
         },
         {
-          name: 'Renovation',
+          name: 'Kitchen Renovation',
           slug: 'renovation',
           key: 'kitchenrenovation',
           image: '/images/kit-18.webp',
@@ -171,20 +139,12 @@ const data = {
           ],
         },
 
-        {
-          name: 'Cut to Size',
-          slug: 'cut2size',
-          key: 'cut2size',
-          image: '/images/con_kit_3.jpg',
+        /* {
+          name: 'CNC cutting services',
+          slug: 'CNC',
+          key: 'cnc',
+          image: '/images/c2s-thump.webp',
           pics: [
-            {
-              key: 'c2s-1',
-              image: '/images/c2s-1.webp',
-            },
-            {
-              key: 'c2s-2',
-              image: '/images/c2s-2.webp',
-            },
             {
               key: 'c2s-3',
               image: '/images/c2s-3.webp',
@@ -197,8 +157,16 @@ const data = {
               key: 'c2s-6',
               image: '/images/c2s-6.webp',
             },
+            {
+              key: 'c2s-7',
+              image: '/images/c2s-7.webp',
+            },
+            {
+              key: 'c2s-8',
+              image: '/images/c2s-8.webp',
+            },
           ],
-        },
+        }, */
         {
           name: 'Cabinet Prefacing',
           slug: 'cabinetpreface',
@@ -463,7 +431,7 @@ const data = {
             },
           ],
         },
-        {
+        /* {
           name: 'Storage',
           slug: 'storage',
           key: 'sto',
@@ -490,7 +458,7 @@ const data = {
               image: '/images/c-10.webp',
             },
           ],
-        },
+        }, */
       ],
       key: 'cus',
       image: '/images/s-s.jpg',
@@ -523,22 +491,46 @@ const data = {
           image: '/images/kit-23.jpg',
         },
       ],
-      subServices: [
-        {
-          name: 'Garage',
-          slug: 'garage',
-          key: 'garage',
-          image: '/images/con_kit_4.jpg',
-          pics: [
-            {
-              key: 'gs',
-              image: '/images/con_kit_4.jpg',
-            },
-          ],
-        },
-      ],
+      subServices: [],
       key: 'design',
       image: '/images/dark_kit_7.jpg',
+      content:
+        'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',
+    },
+    {
+      name: 'CNC cutting services',
+      slug: 'cnc',
+      cover: '/images/cover-4.webp',
+      sub_images: [
+        {
+          name: 'c2s-3',
+          key: 'c2s-3',
+          image: '/images/c2s-3.webp',
+        },
+        {
+          name: 'c2s-4',
+          key: 'c2s-4',
+          image: '/images/c2s-4.webp',
+        },
+        {
+          name: 'c2s-6',
+          key: 'c2s-6',
+          image: '/images/c2s-6.webp',
+        },
+        {
+          name: 'c2s-7',
+          key: 'c2s-7',
+          image: '/images/c2s-7.webp',
+        },
+        {
+          name: 'c2s-8',
+          key: 'c2s-8',
+          image: '/images/c2s-8.webp',
+        },
+      ],
+      subServices: [],
+      key: 'design',
+      image: '/images/c2s-thump.webp',
       content:
         'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',
     },
