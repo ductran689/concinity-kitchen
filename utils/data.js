@@ -584,7 +584,7 @@ const data = {
       name: 'Ken Dollimore – Fairfield',
       key: 2,
       content:
-        'The team at Kenny Kitchen was always approachable and responsive. They promptly addressed any concerns or questions I had throughout the process, ensuring open lines of communication. Their dedication to customer satisfaction was evident at every interaction, and they went above and beyond to exceed my expectations.',
+        'Ken was always approachable and responsive. He and his team promptly addressed any concerns or questions I had throughout the process, ensuring open lines of communication. Their dedication to customer satisfaction was evident at every interaction, and they went above and beyond to exceed my expectations.',
     },
     {
       name: 'Helen Howard – Wollongong',
@@ -592,19 +592,27 @@ const data = {
       content:
         'The team at Kenny Kitchen demonstrated great attention to detail, and their craftsmanship was outstanding. They worked diligently, making sure every aspect of the renovation was executed with precision and care.',
     },
+    {
+      name: 'Emily Noakes – Bellambi',
+      key: 2,
+      content:
+        'I would highly recommend Kenny Kitchen to anyone seeking a kitchen renovation or rebuild. Their expertise, professionalism, and commitment to customer satisfaction are unparalleled. ',
+    },
   ],
   promotion: [
     {
       name: 'Promo 1',
-      image: '/images/promo-1.webp',
-      content:
-        'Free a stainless steel Westinghouse 600m dishwasher for any quote over $15.999',
+      image: '/images/promo-1-main.jpg',
+      promoTitle: '/images/promo-2.jpg',
+      emphasize: 'FREE a stainless steel Westinghouse 600m dishwasher',
+      content: 'For any quote over $15.999',
       link: '',
       key: 'promo1',
     },
     {
       name: 'Promo 2',
       image: '',
+      promoTitle: '/images/comingsoon.jpg',
       content: 'Coming soon',
       link: '',
       key: 'promo2',

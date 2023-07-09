@@ -5,10 +5,10 @@ export default function Footer() {
     <footer className=" w-full  bg-black ">
       <div className="footer_content flex justify-around items-center shadow-inner pt-[70px] mb-[50px]">
         <div className="contact_detail ml-[4px] ">
-          <h3 className="text-gray-200  mb-[20px] font-[500] text-[20px] h3-responsive">
+          <h3 className="text-gray-200  mb-[20px] font-[500] text-[20px] h3-responsive font-poppinsbold">
             GET IN TOUCH
           </h3>
-          <p>
+          <p className="font-poppinsbold">
             <span className="text-footer-responsive">Phone No: </span>
             <span className="text-footer-responsive">0416677889</span> <br />
             <span className="text-footer-responsive">Address: </span>
@@ -20,10 +20,10 @@ export default function Footer() {
           </p>
         </div>
         <div className="trading_hour mr-[4px]">
-          <h3 className="text-gray-200 text-right font-[500] mb-[20px] text-[20px] h3-responsive">
+          <h3 className="text-gray-200 text-right font-[500] mb-[20px] text-[20px] h3-responsive font-poppinsbold">
             TRADING HOURS
           </h3>
-          <p className="text-right">
+          <p className="text-right font-poppinsbold">
             <span className=" text-footer-responsive ">Mon- Sat: </span>
             <span className=" text-footer-responsive">7am - 5pm</span> <br />
             {/*   <span className=" text-footer-responsive ">Sat: </span>
@@ -39,7 +39,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <p className="text-center pb-[70px] text-gray-200 text-xl shadow-inner max-[640px]:text-[16px] ">
+      <p className="text-center font-poppins pb-[70px] text-gray-200 text-xl shadow-inner max-[640px]:text-[16px] ">
         Copyright 2023 Duc Tran
       </p>
     </footer>

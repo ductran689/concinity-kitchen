@@ -79,6 +79,10 @@ h2 {
   stroke: #000;
 }
 
+.special-offer {
+  letter-spacing: 4px;
+}
+
 .card {
   @apply mb-5 block rounded-lg border border-gray-200 shadow-md;
 }
