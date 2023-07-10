@@ -28,6 +28,12 @@ const data = {
       name: 'Kitchen',
       slug: 'kitchen',
       cover: '/images/cover-1.webp',
+      description: {
+        content1:
+          'When you choose Kenny Kitchen for your kitchen renovation or construction project, you can expect exceptional service and outstanding results. Our customer-centric approach means that we prioritize your needs, preferences, and budget. ',
+        content2:
+          'We understand that undertaking a kitchen renovation or building a new kitchen can be a significant investment, which is why we strive to deliver the highest level of professionalism, transparency, and value for your money.',
+      },
       subServices: [
         {
           name: 'New Kitchen',
@@ -223,6 +229,12 @@ const data = {
       name: 'Vanities',
       slug: 'vanities',
       cover: '/images/cover-2.webp',
+      description: {
+        content1:
+          'At Kenny Kitchen, we understand the importance of a well-designed vanity in transforming into a stylish and efficient workspace.',
+        content2:
+          'With years of experience and expertise in the industry, we have curated a collection of vanities that seamlessly blend elegance, functionality, and durability to meet the unique preferences and requirements of our valued customers.',
+      },
       sub_images: [
         {
           name: 'van-1',
@@ -285,66 +297,15 @@ const data = {
         'Unleash your imagination to explore the possibilities of your dream bathroom. Wake up to a Perfect Kitchens’ exclusive vanity',
     },
     {
-      name: 'Flatpack Cabinet',
-      slug: 'fb',
-      cover: '/images/cover-3.webp',
-      sub_images: [
-        { name: 'fb-1', key: 'fb-1', image: '/images/fb-1.webp' },
-        {
-          name: 'fb-2',
-          key: 'fb-2',
-          image: '/images/fb-2.webp',
-        },
-        {
-          name: 'fb-3',
-          key: 'fb-3',
-          image: '/images/fb-3.webp',
-        },
-        {
-          name: 'fb-4',
-          key: 'fb-4',
-          image: '/images/fb-4.webp',
-        },
-        {
-          name: 'fb-5',
-          key: 'fb-5',
-          image: '/images/fb-5.webp',
-        },
-        {
-          name: 'fb-6',
-          key: 'fb-6',
-          image: '/images/fb-6.webp',
-        },
-        {
-          name: 'fb-7',
-          key: 'fb-7',
-          image: '/images/fb-7.webp',
-        },
-        {
-          name: 'fb-8',
-          key: 'fb-8',
-          image: '/images/fb-8.webp',
-        },
-      ],
-      subServices: [
-        {
-          name: 'Garage',
-          slug: 'garage',
-          key: 'garage',
-          image: '/images/con_kit_4.jpg',
-          pics: [],
-        },
-      ],
-      key: 'custom',
-      image: '/images/c-c.jpg',
-      content:
-        'Perfect Kitchens’ specialist cabinet makers and designers will let you achieve that unique custom touch to make your home truly yours',
-    },
-    {
       name: 'Custom Joinery',
       slug: 'custom',
       cover: '/images/cover-4.webp',
-
+      description: {
+        content1:
+          'While our name might suggest a specialization in kitchens, we offer a comprehensive range of services that extend far beyond that. From wardrobes and storage units to garages and beyond, we are dedicated to helping you transform your living spaces with tailor-made creations.',
+        content2:
+          ' We understand that every customer has unique requirements and preferences, which is why we prioritize personalized solutions that reflect your individual style and functional needs.',
+      },
       subServices: [
         {
           name: 'Garage',
@@ -429,6 +390,22 @@ const data = {
               key: 'w-10',
               image: '/images/w-10.webp',
             },
+            {
+              key: 'w-11',
+              image: '/images/c-11.webp',
+            },
+            {
+              key: 'w-12',
+              image: '/images/c-12.webp',
+            },
+            {
+              key: 'w-13',
+              image: '/images/c-13.webp',
+            },
+            {
+              key: 'w-14',
+              image: '/images/c-14.webp',
+            },
           ],
         },
         /* {
@@ -462,13 +439,80 @@ const data = {
       ],
       key: 'cus',
       image: '/images/s-s.jpg',
-      content:
-        'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',
     },
+    {
+      name: 'Flatpack Cabinet',
+      slug: 'fb',
+      cover: '/images/cover-3.webp',
+      description: {
+        content1:
+          'If you are home designer, handyman, renovator or just a DIY homeowner, flatpacked cupboards are the perfect solution to make your work so much simpler and easier while saving you heaps of money for your project.',
+        content2:
+          'Unlikely to many other suppliers, Kenny Kitchen supplies cabinets with the customised size. That means you can build your cabinetry whatever size that suits your space. All you need is making a correct measurement for the space available, and we will take care the rest.',
+      },
+      sub_images: [
+        { name: 'fb-1', key: 'fb-1', image: '/images/fb-1.webp' },
+        {
+          name: 'fb-2',
+          key: 'fb-2',
+          image: '/images/fb-2.webp',
+        },
+        {
+          name: 'fb-3',
+          key: 'fb-3',
+          image: '/images/fb-3.webp',
+        },
+        {
+          name: 'fb-4',
+          key: 'fb-4',
+          image: '/images/fb-4.webp',
+        },
+        {
+          name: 'fb-5',
+          key: 'fb-5',
+          image: '/images/fb-5.webp',
+        },
+        {
+          name: 'fb-6',
+          key: 'fb-6',
+          image: '/images/fb-6.webp',
+        },
+        {
+          name: 'fb-7',
+          key: 'fb-7',
+          image: '/images/fb-7.webp',
+        },
+        {
+          name: 'fb-8',
+          key: 'fb-8',
+          image: '/images/fb-8.webp',
+        },
+      ],
+      subServices: [
+        {
+          name: 'Garage',
+          slug: 'garage',
+          key: 'garage',
+          image: '/images/con_kit_4.jpg',
+          pics: [],
+        },
+      ],
+      key: 'custom',
+      image: '/images/c-c.jpg',
+      content:
+        'Perfect Kitchens’ specialist cabinet makers and designers will let you achieve that unique custom touch to make your home truly yours',
+    },
+
     {
       name: 'Kitchen Design',
       slug: 'design',
       cover: '/images/cover-4.webp',
+      description: {
+        content1:
+          'Starting from just $49 for a consultation at our office, our expert designers will work closely with you to understand your vision, discuss your requirements, and provide tailored recommendations to maximize the potential of your space.',
+        content2:
+          'For just $99, our design experts will visit your place, assess your kitchen space, and collaborate with you to create a customized design plan that reflects your personal style and preferences.',
+      },
       sub_images: [
         {
           name: 'sto-1',
@@ -501,6 +545,12 @@ const data = {
       name: 'CNC cutting services',
       slug: 'cnc',
       cover: '/images/cover-4.webp',
+      description: {
+        content1:
+          'Kenny Kitchen equipped the latest technology of woodworking machinery, we offer you CNC cutting, routering, drilling and edging, etc. for all kinds of cabinetry needs with an affordable price starting from $50 per sheet. All panels are labelled, pre-drilled for quick, efficient and easy assembly.',
+        content2:
+          'Let send us the plan with the details of doors profile, hinges, etc. to get a quote for our service.',
+      },
       sub_images: [
         {
           name: 'c2s-3',
@@ -529,10 +579,8 @@ const data = {
         },
       ],
       subServices: [],
-      key: 'design',
+      key: 'cnc',
       image: '/images/c2s-thump.webp',
-      content:
-        'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',
     },
   ],
   gallery: [
