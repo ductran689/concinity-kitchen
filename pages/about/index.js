@@ -12,8 +12,8 @@ export default function index() {
             Kenny Kitchen's Masterful Joinery Creations
           </h1>
           <div className="about_content">
-            <div className="about_content--1 lg:mb-[100px] lg:mt-[100px] md:mb-[50px] md:mt-[50px] max-[768px]:mt-[50px] max-[768px]:mb-[50px] about-content-responsive flex justify-between flex-row">
-              <p className="lg:w-[45%] md:w-[45%] max-[768px]:w-[90%] flex justify-center items-center text-primary">
+            <div className="about_content--1 lg:mb-[100px] lg:mt-[100px] md:mb-[50px] md:mt-[50px] max-[768px]:mt-[50px] max-[768px]:mb-[50px] max-[719px]:flex-col max-[719px]:justify-center max-[719px]:items-center max-[719px]:h-[500px] flex justify-between flex-row">
+              <p className=" font-poppinsbold lg:w-[45%] md:w-[45%] max-[768px]:w-[90%] flex justify-center items-center text-primary">
                 {text.about.content_1}
               </p>
               <div className="about_pic lg:w-[45%] md:w-[45%] max-[768px]:w-[70%] max-[768px]:mt-[50px] max-[768px]:h-[300px] h-[400px] relative ">
@@ -26,7 +26,7 @@ export default function index() {
               </div>
             </div>
             <div className="about_content--2 lg:mb-[100px] lg:mt-[100px] md:mb-[50px] md:mt-[50px] max-[768px]:mt-[50px] max-[768px]:mb-[50px] about-content-responsive flex justify-between flex-row-reverse">
-              <p className="lg:w-[45%] md:w-[45%] max-[768px]:w-[90%] flex  justify-center items-center text-primary">
+              <p className="font-poppinsbold lg:w-[45%] md:w-[45%] max-[768px]:w-[90%] flex  justify-center items-center text-primary">
                 {text.about.content_2}
               </p>
               <div className="about_pic lg:w-[45%] md:w-[45%] max-[768px]:w-[70%] max-[768px]:mt-[50px] max-[768px]:h-[300px] h-[400px] relative ">

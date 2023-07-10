@@ -48,7 +48,7 @@ function Header() {
             Home
           </Link>
           <Link href="/about" className="text-header">
-            Profile
+            About Us
           </Link>
 
           <Link href="#service_section" scroll={false}>

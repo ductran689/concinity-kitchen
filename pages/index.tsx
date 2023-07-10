@@ -10,6 +10,7 @@ import Services from '../components/Services';
 import Form_btn from '../components/Form_btn';
 import Testimonials from '../components/Testimonials';
 import data from '@/utils/data';
+import Link from 'next/link';
 /* import { getAbout, getAllPics, getCarousel } from '../prisma/admin'; */
 
 export default function Home() {
@@ -29,31 +30,33 @@ export default function Home() {
                 className="relative h-[800px] w-full flex-[0_0_100%]"
                 key={i}
               >
-                <div className="intro-text bg-black/[0.3] center-item z-50 lg:w-[80%] md:w-[90%] max-[768px]:w-[90%] h-[50%] max-[578px]:h-[50%] rounded-xl">
-                  <h1 className="lg:text-[60px] text-white font-[700] md:text-[50px] max-[768px]:text-[40px] text-center">
+                <div className="intro-text bg-black/[0.3] center-item z-50 lg:w-[80%] md:w-[90%] w-[90%] h-[50%] max-[578px]:h-[50%] rounded-xl">
+                  <h1 className="lg:text-[60px] text-white font-[700] md:text-[50px] text-[40px] text-center">
                     Kenny Kitchen
                   </h1>
-                  {text.promo.map((text) => (
-                    <p
-                      className="flex mb-[10px]  text-white lg:text-[30px] md:text-[25px] font-[400] font-poppins max-[768px]:text-[20px] items-center justify-start"
-                      key={text.name}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="#FFFFFF"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="#575353"
-                        className="w-8 h-8 max-[578px]:w-4 max-[578px]:h-4 max-[640px]:hidden"
+                  {text.promo.map((text, i) => (
+                    <Link href="/promotion" key={i + 0.3}>
+                      <p
+                        className="flex mb-[10px]  text-white lg:text-[30px] md:text-[25px] font-[400] font-poppins max-[768px]:text-[20px] items-center justify-start"
+                        key={text.name}
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                      <span>{text.text}</span>
-                    </p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#FFFFFF"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="#575353"
+                          className="w-8 h-8 max-[578px]:w-4 max-[578px]:h-4 max-[640px]:hidden"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        <span>{text.text}</span>
+                      </p>
+                    </Link>
                   ))}
                   <div className="flex justify-center hover:border-black p-[5px] ">
                     <Form_btn

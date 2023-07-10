@@ -5,7 +5,7 @@ export default function Testimonials() {
   console.log(data.testimonial);
   return (
     <div className="mt-[100px] mb-[100px] max-[568px]:mt-[50px] max-[568px]:mb-[50px] lg:h-[500px] md:h-[400px] max-[568px]:h-[400px]">
-      <h1 className="h1-primary text-slate-700 max-[568px]:text-[23px]">
+      <h1 className="h1-primary min-[320px]:text-[18px] text-slate-700 max-[568px]:text-[23px]">
         TESTIMONIALS
       </h1>
       {/* {data.testimonial.map((test) => (
@@ -25,7 +25,7 @@ export default function Testimonials() {
           {data.testimonial.map((promo, i) => {
             return (
               <div
-                className="relative lg:h-[400px] md:h-[300px] max-[768px]:h-[300px] w-full flex-[0_0_100%] bg-black/75 "
+                className="relative lg:h-[400px] md:h-[300px] sm:h-[300px] h-[300px] w-full flex-[0_0_100%] bg-black/75 "
                 key={i}
               >
                 <div className="pro-content center-item bg-white rounded-lg m-auto border-solid border-2 w-[90%] h-[90%] shadow-xl flex flex-col justify-center items-center">

@@ -9,7 +9,7 @@ export default function About() {
       className="about mt-[100px] mb-[100px] lg:w-[70%] md:w-[80%] min-[320px]:w-[90%] m-auto "
       id="about_section"
     >
-      <h1 className="h1-primary text-gray-800">
+      <h1 className="h1-primary sm:text-[30px] text-[25px] text-gray-800">
         Creating Perfect Kitchen In Sydney
       </h1>
       {/* <div className="container flex justify-around flex-col md:flex-row sm:justify-center sm:items-center lg:flex-row">
@@ -29,9 +29,11 @@ export default function About() {
         ))}
       </div> */}
       {/* title */}
-      <h2 className=" h2-responsive">New Kitchens & Kitchen Renovations</h2>
+      <h2 className=" lg:text-[30px]  text-[25px] text-gray-800 text-center">
+        New Kitchens & Kitchen Renovations
+      </h2>
       <div className="about_context  m-auto">
-        <p className="text-primary mb-[50px] mt-[50px] font-poppinsbold">
+        <p className="text-primary text-[16px] mb-[50px] mt-[50px] font-poppinsbold">
           {text.about.intro}
         </p>
 

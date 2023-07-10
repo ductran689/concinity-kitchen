@@ -5,7 +5,7 @@ export default function Form_btn({ href, color, hoverText, hoverBg, bg }) {
   return (
     <Link href={href} scroll={false}>
       <button
-        className={`border-${color} border-[2px] text-${color} p-2 lg:text-[25px] font-[400] bg-${bg} mt-[10px] flex items-center hover:text-${hoverText} hover:bg-${hoverBg} md:text-[20px] max-[768px]:text-[16px] hover:border-black font-poppins`}
+        className={`border-${color} border-[2px] text-${color} p-2 lg:text-[25px] font-[400] bg-${bg} mt-[10px] flex items-center hover:text-${hoverText} hover:bg-${hoverBg} md:text-[20px] text-[16px] hover:border-black font-poppins`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +13,7 @@ export default function Form_btn({ href, color, hoverText, hoverBg, bg }) {
           viewBox="0 0 24 24"
           strokeWidth={2.5}
           stroke="currentColor"
-          className="lg:w-6 lg:h-6 md:w-5 md:h-5 max-[768px]:w-4 max-[768px]:h-4 mr-[4px]"
+          className="lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4 mr-[4px]"
         >
           <path
             strokeLinecap="round"

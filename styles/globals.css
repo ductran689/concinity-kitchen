@@ -33,6 +33,9 @@ h1,
 h2 {
   font-family: 'Poppins-bold';
 }
+h1 {
+  @apply text-[25px];
+}
 
 @font-face {
   font-family: 'playfairItalic';
@@ -101,7 +104,7 @@ h2 {
   @apply text-[22px] text-center;
 }
 .text-primary {
-  @apply text-center lg:text-[18px] md:text-[18px] font-[500] text-gray-800 min-[320px]:text-[16px];
+  @apply text-center lg:text-[18px] md:text-[18px] font-[500] text-gray-800;
 }
 .text-secondary {
   @apply text-center text-[18px] font-[400] text-gray-800;
@@ -154,12 +157,10 @@ h2 {
 
 /* RESPONSIVE */
 
-.form_responsive {
+/* .form_responsive {
   @apply sm:w-[95%] md:w-[70%] lg:w-[60%] min-[320px]:w-[90%];
 }
-.h1-responsive {
-  @apply min-[320px]:text-[25px];
-}
+
 .h2-responsive {
   @apply lg:text-[30px]  min-[320px]:text-[25px] text-gray-800 text-center;
 }
@@ -175,3 +176,4 @@ h2 {
 .about_xtra_res {
   @apply max-[880px]:flex-col max-[880px]:justify-center max-[880px]:items-center;
 }
+ */
