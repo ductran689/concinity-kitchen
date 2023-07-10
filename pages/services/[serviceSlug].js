@@ -19,10 +19,10 @@ export default function ServiceScreen() {
     <SubLayout topic={service.name} key={service.key}>
       <div className="subLayout-container ">
         <div className="mb-[40px] lg:w-[80%] md:w-[80%] w-[90%] m-auto ">
-          <p className="font-poppinsbold text-center lg:text-[18px] md:text-[16px] sm:text-[16px] text-[14px] mb-[20px]">
+          <p className=" text-slate-700 font-poppinsbold text-center lg:text-[18px] md:text-[16px] sm:text-[16px] text-[14px] mb-[20px]">
             {service.description.content1}
           </p>
-          <p className="font-poppinsbold text-center lg:text-[18px] md:text-[16px] sm:text-[16px] text-[14px] mb-[20px]">
+          <p className=" text-slate-700 font-poppinsbold text-center lg:text-[18px] md:text-[16px] sm:text-[16px] text-[14px] mb-[20px]">
             {service.description.content2}
           </p>
         </div>

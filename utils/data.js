@@ -119,7 +119,7 @@ const data = {
           name: 'Kitchen Renovation',
           slug: 'renovation',
           key: 'kitchenrenovation',
-          image: '/images/kit-18.webp',
+          image: '/images/fb-1.webp',
           pics: [
             {
               key: 'rn-1',
