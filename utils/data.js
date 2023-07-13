@@ -451,41 +451,22 @@ const data = {
           'Unlikely to many other suppliers, Kenny Kitchen supplies cabinets with the customised size. That means you can build your cabinetry whatever size that suits your space. All you need is making a correct measurement for the space available, and we will take care the rest.',
       },
       sub_images: [
-        { name: 'fb-1', key: 'fb-1', image: '/images/fb-1.webp' },
-        {
-          name: 'fb-2',
-          key: 'fb-2',
-          image: '/images/fb-2.webp',
-        },
+        { name: 'fb-1', key: 'fb-1', image: '/images/fp-1.webp' },
+
         {
           name: 'fb-3',
           key: 'fb-3',
-          image: '/images/fb-3.webp',
+          image: '/images/fp-3.jpeg',
         },
         {
           name: 'fb-4',
           key: 'fb-4',
-          image: '/images/fb-4.webp',
+          image: '/images/fp-4.webp',
         },
         {
           name: 'fb-5',
           key: 'fb-5',
-          image: '/images/fb-5.webp',
-        },
-        {
-          name: 'fb-6',
-          key: 'fb-6',
-          image: '/images/fb-6.webp',
-        },
-        {
-          name: 'fb-7',
-          key: 'fb-7',
-          image: '/images/fb-7.webp',
-        },
-        {
-          name: 'fb-8',
-          key: 'fb-8',
-          image: '/images/fb-8.webp',
+          image: '/images/fp-5.webp',
         },
       ],
       subServices: [

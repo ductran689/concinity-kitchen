@@ -39,11 +39,11 @@ function Header() {
         </button>
       </div>
       <div
-        className={`w-full block  lg:flex lg:items-center lg:w-auto ${
+        className={`w-full block  lg:flex lg:items-center lg:w-auto  ${
           isOpen ? 'block' : 'hidden'
         }`}
       >
-        <div className="text-sm lg:flex lg:justify-end max-[1024px]:bg-black/50 max-[1024px]:pl-[10px] max-[1024px]:pb-[10px] max-[1024px]:pt-[5px] ">
+        <div className="text-sm lg:flex lg:justify-end max-[1024px]:bg-black/50 max-[1024px]:pl-[10px] max-[1024px]:pb-[10px] max-[1024px]:pt-[5px] z-40">
           <Link href="/" className="text-header">
             Home
           </Link>
