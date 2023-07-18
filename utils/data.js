@@ -308,9 +308,9 @@ const data = {
       },
       subServices: [
         {
-          name: 'Garage',
-          slug: 'garage',
-          key: 'garage',
+          name: 'TV unit',
+          slug: 'TV unit',
+          key: 'TV unit',
           image: '/images/s-2.webp',
           pics: [
             {
@@ -408,10 +408,10 @@ const data = {
             },
           ],
         },
-        /* {
-          name: 'Storage',
-          slug: 'storage',
-          key: 'sto',
+        {
+          name: 'Study Desk',
+          slug: 'Study Desk',
+          key: 'sd',
           image: '/images/w-1.webp',
           pics: [
             {
@@ -435,7 +435,7 @@ const data = {
               image: '/images/c-10.webp',
             },
           ],
-        }, */
+        },
       ],
       key: 'cus',
       image: '/images/s-s.jpg',
@@ -523,7 +523,7 @@ const data = {
         'Discover our range of stylish and innovative storage solutions created to maximise space using intelligent design and modern technology',
     },
     {
-      name: 'CNC cutting services',
+      name: 'CNC Cutting ',
       slug: 'cnc',
       cover: '/images/cover-4.webp',
       description: {
@@ -543,16 +543,7 @@ const data = {
           key: 'c2s-4',
           image: '/images/c2s-4.webp',
         },
-        {
-          name: 'c2s-6',
-          key: 'c2s-6',
-          image: '/images/c2s-6.webp',
-        },
-        {
-          name: 'c2s-7',
-          key: 'c2s-7',
-          image: '/images/c2s-7.webp',
-        },
+
         {
           name: 'c2s-8',
           key: 'c2s-8',

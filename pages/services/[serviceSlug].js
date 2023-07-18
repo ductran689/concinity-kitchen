@@ -5,15 +5,13 @@ import React from 'react';
 import BtnCard from '../../components/BtnCard';
 import SubLayout from '../../components/SubLayout';
 import data from '../../utils/data';
-import { useState } from 'react';
-import FullscreenImage from '../../components/FullscreenImage';
 
 export default function ServiceScreen() {
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleImageClick = (imageUrl) => {
+  /*   const [selectedImage, setSelectedImage] = useState(null);
+   */
+  /* const handleImageClick = (imageUrl) => {
     setSelectedImage(imageUrl);
-  };
+  }; */
   const { query } = useRouter();
 
   const { serviceSlug } = query;
@@ -23,8 +21,8 @@ export default function ServiceScreen() {
     return <div>Service Not Found</div>;
   }
   if (service && service.sub_images) {
-    const extend = service.sub_images.find((x) => x.image === selectedImage);
-    return (
+    /*     const extend = service.sub_images.find((x) => x.image === selectedImage);
+     */ return (
       <SubLayout topic={service.name} key={service.key}>
         <div className="subLayout-container ">
           <div className="mb-[40px] lg:w-[80%] md:w-[80%] w-[90%] m-auto ">
@@ -41,22 +39,17 @@ export default function ServiceScreen() {
                 className="sub_container h-[350px] max-[433px]:h-[300px] relative "
                 key={`${sub.key}`}
               >
-                {/* <Link href={sub.image}>
-                   
-                  </Link> */}
-                <Image
-                  className="rounded-lg brightness-90 "
-                  src={sub.image}
-                  alt={sub.name}
-                  fill={true}
-                  onClick={() => handleImageClick(sub.image)}
-                />
-                {extend && (
-                  <FullscreenImage imageUrl={extend.image}></FullscreenImage>
-                )}
+                <Link href={sub.image}>
+                  <Image
+                    className="rounded-lg brightness-90 "
+                    src={sub.image}
+                    alt={sub.name}
+                    fill={true}
+                    /*   onClick={() => handleImageClick(sub.image)} */
+                  />
+                </Link>
               </div>
             ))}
-            ))
           </div>
         </div>
       </SubLayout>

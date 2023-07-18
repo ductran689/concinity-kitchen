@@ -24,7 +24,8 @@
     "**/*.tsx",
     "components/Layout.js",
     "pages/api/contact.js",
-    "components/Form.js"
+    "components/Form.js",
+    "pages/api/auth/[...nextauth].js"
   ],
   "exclude": ["node_modules"]
 }
