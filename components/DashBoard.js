@@ -3,10 +3,13 @@ import data from '../utils/data';
 import Image from 'next/image';
 import { signOut } from 'next-auth/react';
 import SubLayout from './SubLayout';
+import UploadFile from './UploadFile';
+import Link from 'next/link';
 
 export default function DashBoard() {
   return (
     <SubLayout topic="DashBoard">
+      <UploadFile></UploadFile>
       <div className="grid grid-rows-3 grid-cols-6 h-full">
         <nav className="col-span-1 row-span-3 bg-gray-700 pt-6">
           <div className="px-2 mb-6 ">
@@ -14,23 +17,26 @@ export default function DashBoard() {
               Welcome Kenny
             </h1>
           </div>
+          <hr className="border-gray-200 mx-6 mb-3" />
           <div className="px-2 mb-6">
-            <div className="bg-gray-200 flex font-medium items-center px-4 py-2 rounded text-sm text-white">
-              <svg
-                className="h-6 mr-4"
-                viewBox="0 0 512 512"
-                width="24"
-                height="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-              Home
-            </div>
-            <div className="flex font-medium items-center px-4 py-2 rounded text-sm text-gray-100 hover:text-white">
+            <Link href="/">
+              <div className=" flex font-medium items-center px-4 py-2 rounded text-sm text-gray-200  hover:bg-slate-300 hover:text-slate-700 cursor-pointer">
+                <svg
+                  className="h-6 mr-4"
+                  viewBox="0 0 512 512"
+                  width="24"
+                  height="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                Home
+              </div>
+            </Link>
+            {/*  <div className="flex font-medium items-center px-4 py-2 rounded text-sm text-gray-100 hover:text-white">
               <svg
                 className="h-6 mr-4"
                 viewBox="0 0 512 512"
@@ -45,9 +51,9 @@ export default function DashBoard() {
                 ></path>
               </svg>
               Search
-            </div>
+            </div> */}
             <div
-              className="flex font-medium items-center px-4 py-2 rounded text-sm text-gray-100 hover:text-white"
+              className="flex font-medium items-center px-4 py-2 rounded text-sm text-gray-200  hover:bg-slate-300 hover:text-slate-700 cursor-pointer"
               onClick={() => signOut()}
             >
               <svg
@@ -67,7 +73,7 @@ export default function DashBoard() {
               Log out
             </div>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-xs uppercase text-white px-6 tracking-widest font-light mb-4">
               Playlists
             </h3>
@@ -93,15 +99,7 @@ export default function DashBoard() {
               </div>
             </div>
             <hr className="border-gray-200 mx-6 mb-3" />
-            <div>
-              <div className="px-6 py-2 flex items-center text-sm text-white  hover:text-white">
-                Liked from Radio
-              </div>
-              <div className="px-6 py-2 flex items-center text-sm text-white  hover:text-white">
-                Discover Weekly
-              </div>
-            </div>
-          </div>
+          </div> */}
         </nav>
         <main className="col-span-5 row-span-3 overflow-auto">
           <header className="px-6 py-4 mb-6 bg-gray-600 flex items-center justify-between sticky top-0 z-10">
@@ -136,22 +134,14 @@ export default function DashBoard() {
           <section className="px-6 grid gap-6 mb-8">
             <div className="flex items-center">
               <div className="flex-1">
-                <h3 className="text-2xl text-white">
+                <h3 className="text-2xl text-slate-700">
                   <a
-                    className="border-b border-transparent hover:border-white"
+                    className="border-b border-transparent hover:border-slate-700"
                     href=""
                   >
                     Recently played
                   </a>
                 </h3>
-              </div>
-              <div>
-                <a
-                  className="text-xs text-gray-100 tracking-widest uppercase hover:underline"
-                  href=""
-                >
-                  See all
-                </a>
               </div>
             </div>
             <div className="grid grid-cols-6 gap-4">
@@ -178,22 +168,7 @@ export default function DashBoard() {
           <section className="px-6 grid gap-6 mb-8">
             <div className="flex items-center">
               <div className="flex-1">
-                <h3 className="text-2xl text-white">
-                  <a
-                    className="border-b border-transparent hover:border-white"
-                    href=""
-                  >
-                    Recently played
-                  </a>
-                </h3>
-              </div>
-              <div>
-                <a
-                  className="text-xs text-gray-100 tracking-widest uppercase hover:underline"
-                  href=""
-                >
-                  See all
-                </a>
+                <h3 className="text-2xl text-slate-700">Recently played</h3>
               </div>
             </div>
             <div className="grid grid-cols-6 gap-4">
