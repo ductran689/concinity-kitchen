@@ -77,14 +77,14 @@ const data = {
               key: 'nk9',
               image: '/images/dark_kit_3.jpg',
             },
-            {
+            /* {
               key: 'nk10',
               image: '/images/kc-5.webp',
             },
             {
               key: 'nk11',
               image: '/images/kc-6.webp',
-            },
+            }, */
             {
               key: 'nk12',
               image: '/images/kc-7.webp',
@@ -311,47 +311,26 @@ const data = {
           name: 'TV unit',
           slug: 'TV unit',
           key: 'TV unit',
-          image: '/images/s-2.webp',
+          image: '/images/tv-1.jpg',
           pics: [
             {
-              key: 's-1',
-              image: '/images/S-1.webp',
+              key: 'tv-1',
+              image: '/images/tv-1.jpg',
             },
             {
-              key: 's-2',
-              image: '/images/s-2.webp',
-            },
-
-            {
-              key: 's-5',
-              image: '/images/s-5.webp',
+              key: 'tv-2',
+              image: '/images/tv-2.jpg',
             },
             {
-              key: 's-9',
-              image: '/images/s-9.webp',
-            },
-            {
-              key: 's-10',
-              image: '/images/s-10.webp',
-            },
-            {
-              key: 's-11',
-              image: '/images/s-11.webp',
-            },
-            {
-              key: 's-13',
-              image: '/images/s-13.webp',
-            },
-            {
-              key: 's-14',
-              image: '/images/s-14.webp',
+              key: 'tv-3',
+              image: '/images/tv-3.jpg',
             },
           ],
         },
         {
           name: 'Wardrobes',
           slug: 'wardrobes',
-          key: 'nwardrobe',
+          key: 'wardrobe',
           image: '/images/w-1.webp',
           pics: [
             {
@@ -412,27 +391,22 @@ const data = {
           name: 'Study Desk',
           slug: 'Study Desk',
           key: 'sd',
-          image: '/images/w-1.webp',
+          image: '/images/sd-3.jpg',
           pics: [
             {
-              name: 'sto-7',
-              key: 'sto-7',
-              image: '/images/c-7.webp',
+              name: 'sd-1',
+              key: 'sd-1',
+              image: '/images/sd-1.JPG',
             },
             {
-              name: 'sto-8',
-              key: 'sto-8',
-              image: '/images/c-8.webp',
+              name: 'sd-2',
+              key: 'sd-2',
+              image: '/images/sd-2.jpg',
             },
             {
-              name: 'sto-9',
-              key: 'sto-9',
-              image: '/images/c-9.webp',
-            },
-            {
-              name: 'sto-10',
-              key: 'sto-10',
-              image: '/images/c-10.webp',
+              name: 'sd-3',
+              key: 'sd-3',
+              image: '/images/sd-3.jpg',
             },
           ],
         },
@@ -467,6 +441,16 @@ const data = {
           name: 'fb-5',
           key: 'fb-5',
           image: '/images/fp-5.webp',
+        },
+        {
+          name: 'fp-9',
+          key: 'fp-9',
+          image: '/images/fp-9.webp',
+        },
+        {
+          name: 'fp-10',
+          key: 'fp-10',
+          image: '/images/fp-10.webp',
         },
       ],
       subServices: [

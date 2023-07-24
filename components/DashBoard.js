@@ -3,13 +3,13 @@ import data from '../utils/data';
 import Image from 'next/image';
 import { signOut } from 'next-auth/react';
 import SubLayout from './SubLayout';
-import UploadFile from './UploadFile';
+import MultipleUpload from './MultipleUpload';
 import Link from 'next/link';
 
 export default function DashBoard() {
   return (
     <SubLayout topic="DashBoard">
-      <UploadFile></UploadFile>
+      <MultipleUpload></MultipleUpload>
       <div className="grid grid-rows-3 grid-cols-6 h-full">
         <nav className="col-span-1 row-span-3 bg-gray-700 pt-6">
           <div className="px-2 mb-6 ">
