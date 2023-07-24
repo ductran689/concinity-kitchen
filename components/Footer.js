@@ -20,7 +20,7 @@ export default function Footer() {
               Address:{' '}
             </span>
             <span className="text-gray-200 font-[700] text-[11px] lg:text-[18px]">
-              Unknow
+              184 Sandal Cresent, Carramar, NSW 2163
             </span>{' '}
             <br />
             <span className="text-gray-200 font-[700] text-[11px] lg:text-[18px]">
