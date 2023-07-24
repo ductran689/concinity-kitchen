@@ -10,17 +10,17 @@ export const FormidableError = formidable.errors.FormidableError;
 export const parseForm = async (
   req: NextApiRequest
 ): Promise<{ fields: formidable.Fields; files: formidable.Files }> => {
-  return await new Promise(async (resolve, reject) => {
+  return await new Promise((resolve, reject) => {
     const uploadDir = join(
       process.env.ROOT_DIR || process.cwd(),
       `/uploads/${dateFn.format(Date.now(), 'dd-MM-Y')}`
     );
 
     try {
-      await stat(uploadDir);
+      stat(uploadDir);
     } catch (e: any) {
       if (e.code === 'ENOENT') {
-        await mkdir(uploadDir, { recursive: true });
+        mkdir(uploadDir, { recursive: true });
       } else {
         console.error(e);
         reject(e);
