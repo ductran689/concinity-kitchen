@@ -25,7 +25,8 @@
     "components/Layout.js",
     "pages/api/contact.js",
     "components/Form.js",
-    "pages/api/auth/[...nextauth].js"
+    "pages/api/auth/[...nextauth].js",
+    "components/UploadFile.tsx"
   ],
   "exclude": ["node_modules"]
 }
