@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <nav className="flex items-center justify-between flex-wrap p-x-6 bg-black/50 h-[60px]">
-      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+      {/* <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
         <Image
           className="rounded-t-lg  fill-slate-700"
           src=""
@@ -16,7 +16,7 @@ function Header() {
           width={40}
           height={40}
         />
-      </div>
+      </div> */}
       <div className="block lg:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
