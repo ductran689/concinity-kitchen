@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import DropdownMenu from '../components/DropdownMenu';
-import React, { useState } from 'react';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
