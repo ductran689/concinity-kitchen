@@ -81,6 +81,10 @@ h1 {
 .r-arrow:hover {
   stroke: #000;
 }
+.content-area {
+  resize: both;
+  overflow: auto;
+}
 
 .special-offer {
   letter-spacing: 4px;

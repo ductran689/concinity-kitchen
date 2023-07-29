@@ -3,13 +3,15 @@ import data from '../utils/data';
 import Image from 'next/image';
 import { signOut } from 'next-auth/react';
 import SubLayout from './SubLayout';
-import MultipleUpload from './MultipleUpload';
+/* import UploadFile from './UploadFile'; */
+/* import SingleUpload from './SingleUpload'; */
 import Link from 'next/link';
 
 export default function DashBoard() {
   return (
     <SubLayout topic="DashBoard">
-      <MultipleUpload></MultipleUpload>
+      {/* <UploadFile></UploadFile> */}
+      {/* <SingleUpload></SingleUpload> */}
       <div className="grid grid-rows-3 grid-cols-6 h-full">
         <nav className="col-span-1 row-span-3 bg-gray-700 pt-6">
           <div className="px-2 mb-6 ">
@@ -148,15 +150,16 @@ export default function DashBoard() {
               {data.services.map((service) => {
                 return (
                   <div className="bg-gray-200 rounded-lg p-5" key={service.key}>
-                    <div className="relative pt-full mb-4 h-[116px]">
-                      <Image
-                        classNameName="block w-full   "
-                        src={service.image}
-                        alt={service.name}
-                        fill={true}
-                      />
-                    </div>
-
+                    <Link href={`/manage/${service.slug}`}>
+                      <div className="relative pt-full mb-4 h-[116px] cursor-pointer">
+                        <Image
+                          classNameName="block w-full   "
+                          src={service.image}
+                          alt={service.name}
+                          fill={true}
+                        />
+                      </div>
+                    </Link>
                     <div className="text-sm text-center text-slate-700 text-line-clamp-1 mb-1 block">
                       {`Manage ${service.name}`}
                     </div>
@@ -175,13 +178,15 @@ export default function DashBoard() {
               {data.services.map((service) => {
                 return (
                   <div className="bg-gray-200 rounded-lg p-5" key={service.key}>
-                    <div className="relative pt-full mb-4 h-[116px]">
-                      <Image
-                        classNameName="block w-full   "
-                        src={service.image}
-                        alt={service.name}
-                        fill={true}
-                      />
+                    <div className="relative pt-full mb-4 h-[116px] cursor-pointer">
+                      <Link href={`/Dashboard/${service.slug}`}>
+                        <Image
+                          classNameName="block w-full   "
+                          src={service.image}
+                          alt={service.name}
+                          fill={true}
+                        />
+                      </Link>
                     </div>
 
                     <div className="text-sm text-center text-slate-700 text-line-clamp-1 mb-1 block">
@@ -217,13 +222,15 @@ export default function DashBoard() {
               {data.services.map((service) => {
                 return (
                   <div className="bg-gray-200 rounded-lg p-5" key={service.key}>
-                    <div className="relative pt-full mb-4 h-[116px]">
-                      <Image
-                        classNameName="block w-full   "
-                        src={service.image}
-                        alt={service.name}
-                        fill={true}
-                      />
+                    <div className="relative pt-full mb-4 h-[116px] cursor-pointer">
+                      <Link href={`/Dashboard/${service.slug}`}>
+                        <Image
+                          classNameName="block w-full   "
+                          src={service.image}
+                          alt={service.name}
+                          fill={true}
+                        />
+                      </Link>
                     </div>
 
                     <div className="text-sm text-center text-slate-700 text-line-clamp-1 mb-1 block">

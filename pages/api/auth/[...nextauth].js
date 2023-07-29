@@ -37,9 +37,6 @@ const authOptions = {
 
         // if everything is fine
         return {
-          id: '1234',
-          name: 'Ken',
-          email: 'sales@kennykitchewn.com.au',
           role: 'admin',
         };
       },
