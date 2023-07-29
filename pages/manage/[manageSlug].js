@@ -2,12 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
-import BtnCard from '../../components/BtnCard';
+import BtnManage from '../../components/BtnManage';
+import ChangeContent from '../../components/ChangeContent';
 import SubLayout from '../../components/SubLayout';
 import UploadFile from '../../components/UploadFile';
 import data from '../../utils/data';
-import BtnManage from '../../components/BtnManage';
-import ChangeContent from '../../components/ChangeContent';
 
 export default function ManageServiceScreen() {
   /*   const [selectedImage, setSelectedImage] = useState(null);
