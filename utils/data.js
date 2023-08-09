@@ -70,10 +70,6 @@ const data = {
               key: 'nk11',
               image: '/images/kc-11.webp',
             },
-            {
-              key: 'nk12',
-              image: '/images/kc-12.webp',
-            },
           ],
         },
         {
@@ -110,7 +106,7 @@ const data = {
           name: 'Cabinet Prefacing',
           slug: 'cabinetpreface',
           key: 'cabipreface',
-          image: '/images/con_kit_2.jpg',
+          image: '/images/rf-cover.webp',
           slider: [
             {
               name: 'rf-1',
@@ -258,7 +254,7 @@ const data = {
           name: 'Wardrobes',
           slug: 'wardrobes',
           key: 'wardrobe',
-          image: '/images/w-1.webp',
+          image: '/images/w-cover.webp',
           pics: [
             {
               key: 'w-2',
@@ -275,42 +271,6 @@ const data = {
             {
               key: 'w-5',
               image: '/images/w-5.webp',
-            },
-            {
-              key: 'w-6',
-              image: '/images/w-6.webp',
-            },
-            {
-              key: 'w-7',
-              image: '/images/w-7.webp',
-            },
-            {
-              key: 'w-8',
-              image: '/images/w-8.webp',
-            },
-            {
-              key: 'w-9',
-              image: '/images/w-9.webp',
-            },
-            {
-              key: 'w-10',
-              image: '/images/w-10.webp',
-            },
-            {
-              key: 'w-11',
-              image: '/images/c-11.webp',
-            },
-            {
-              key: 'w-12',
-              image: '/images/c-12.webp',
-            },
-            {
-              key: 'w-13',
-              image: '/images/c-13.webp',
-            },
-            {
-              key: 'w-14',
-              image: '/images/c-14.webp',
             },
           ],
         },
@@ -329,11 +289,6 @@ const data = {
               name: 'sd-2',
               key: 'sd-2',
               image: '/images/sd-2.jpg',
-            },
-            {
-              name: 'sd-3',
-              key: 'sd-3',
-              image: '/images/sd-3.jpg',
             },
           ],
         },
