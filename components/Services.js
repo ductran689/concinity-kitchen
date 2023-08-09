@@ -12,9 +12,7 @@ import BtnCard from '../components/BtnCard';
 export default function Services() {
   return (
     <div className="services  mt-[100px] mb-[100px] " id="service_section">
-      <h1 className="h1-primary min-[320px]:text-[18px] text-slate-700 ">
-        OUR SERVICE
-      </h1>
+      <h1 className="h1-primary  text-slate-700 ">OUR SERVICES</h1>
       <p className="text-primary min-[320px]:text-[16px] mb-[50px] font-poppinsbold">
         Kenny Kitchens provide a full range of services covering everything you
         need to create a beautiful new kitchen. Select a service below to find

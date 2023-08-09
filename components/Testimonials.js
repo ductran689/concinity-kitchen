@@ -5,7 +5,7 @@ export default function Testimonials() {
   console.log(data.testimonial);
   return (
     <div className="mt-[100px] mb-[100px] max-[568px]:mt-[50px] max-[568px]:mb-[50px] lg:h-[500px] md:h-[400px] max-[568px]:h-[400px]">
-      <h1 className="h1-primary min-[320px]:text-[18px] text-slate-700 max-[568px]:text-[23px]">
+      <h1 className="h1-primary  text-slate-700 max-[568px]:text-[23px]">
         TESTIMONIALS
       </h1>
       {/* {data.testimonial.map((test) => (
