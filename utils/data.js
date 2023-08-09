@@ -1,8 +1,7 @@
 const data = {
   carousel: [
+    '/images/kit-26.jpg',
     '/images/kit-17.webp',
-
-    '/images/c-5.webp',
 
     '/images/kc-2.webp',
 
@@ -25,7 +24,7 @@ const data = {
           name: 'New Kitchen',
           slug: 'new_kitchen',
           key: 'newkitchen',
-          image: '/images/con_kit_7.jpg',
+          image: '/images/kc-11.webp',
           pics: [
             {
               key: 'nk1',
@@ -81,7 +80,7 @@ const data = {
           name: 'Kitchen Renovation',
           slug: 'renovation',
           key: 'kitchenrenovation',
-          image: '/images/fb-1.webp',
+          image: '/images/kc-3.webp',
           pics: [
             {
               key: 'rn-1',
