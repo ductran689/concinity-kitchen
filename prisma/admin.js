@@ -6,12 +6,12 @@ export const getAllPics = async () => {
   return pics;
 };
 export const getCarousel = async () => {
-  const caro = await prisma.top_img.findMany({});
+  const caro = await prisma.services.findMany({});
   return caro;
 };
 
 export const getAbout = async () => {
-  const about = await prisma.top_img.findMany({});
+  const about = await prisma.services.findMany({});
   return about;
 };
 

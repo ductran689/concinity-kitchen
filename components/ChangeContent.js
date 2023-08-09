@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 
 export default function ChangeContent() {
@@ -6,7 +7,7 @@ export default function ChangeContent() {
   const handleCancel = () => {
     setContent('');
   };
-  const handleSubmit = async (e) => {
+  /* const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch('/api/submitContent', {
       method: 'POST',
@@ -22,6 +23,15 @@ export default function ChangeContent() {
     } else {
       // Handle error
       console.error('Failed to submit content.');
+    }
+  }; */
+
+  const handleSubmit = async () => {
+    try {
+      await axios.post('/api/update', { content });
+      console.log('Note updated successfully!');
+    } catch (error) {
+      console.log(error.response.data);
     }
   };
 

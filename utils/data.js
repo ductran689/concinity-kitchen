@@ -9,20 +9,6 @@ const data = {
     '/images/kit-12.jpg',
   ],
 
-  about_images: [
-    {
-      name: 'about_1',
-      image: '/images/cabinet_1.jpg',
-    },
-    {
-      name: 'about_2',
-      image: '/images/cabinet_2.jpg',
-    },
-    {
-      name: 'about_3',
-      image: '/images/kitchen_1.jpg',
-    },
-  ],
   services: [
     {
       name: 'Kitchen',
@@ -30,7 +16,7 @@ const data = {
       cover: '/images/cover-1.webp',
       description: {
         content1:
-          'When you choose Kenny Kitchen for your kitchen renovation or construction project, you can expect exceptional service and outstanding results. Our customer-centric approach means that we prioritize your needs, preferences, and budget. ',
+          'When you choose Kenny Kitchen for your kitchen renovation or construction project, you can expect exceptional service and outstanding results. Our customer-centric approach means that we prioritise your needs, preferences, and budget. ',
         content2:
           'We understand that undertaking a kitchen renovation or building a new kitchen can be a significant investment, which is why we strive to deliver the highest level of professionalism, transparency, and value for your money.',
       },
@@ -51,67 +37,43 @@ const data = {
             },
             {
               key: 'nk3',
-              image: '/images/dark_kit_4.jpg',
-            },
-            {
-              key: 'nk4',
               image: '/images/kc-3.webp',
             },
             {
-              key: 'nk5',
+              key: 'nk4',
               image: '/images/kc-4.webp',
             },
             {
-              key: 'nk6',
-              image: '/images/dark_kit_7.jpg',
-            },
-            {
-              key: 'nk7',
-              image: '/images/dark_kit_6.jpg',
-            },
-            {
-              key: 'nk8',
-              image: '/images/dark_kit_4.jpg',
-            },
-            {
-              key: 'nk9',
-              image: '/images/dark_kit_3.jpg',
-            },
-            /* {
-              key: 'nk10',
+              key: 'nk5',
               image: '/images/kc-5.webp',
             },
             {
-              key: 'nk11',
+              key: 'nk6',
               image: '/images/kc-6.webp',
-            }, */
+            },
             {
-              key: 'nk12',
+              key: 'nk7',
               image: '/images/kc-7.webp',
             },
             {
-              key: 'nk13',
+              key: 'nk8',
               image: '/images/kc-8.webp',
             },
             {
-              key: 'nk14',
+              key: 'nk9',
               image: '/images/kc-9.webp',
             },
             {
-              key: 'nk15',
+              key: 'nk10',
               image: '/images/kc-10.webp',
             },
             {
-              key: 'nk16',
-              image: '/images/kit-25.jpg',
+              key: 'nk11',
+              image: '/images/kc-11.webp',
             },
             {
-              key: 'nk17',
-              image: '/images/kit-24.jpg',
-            },
-            {
-              key: 'nk18',
-              image: '/images/kit-23.jpg',
+              key: 'nk12',
+              image: '/images/kc-12.webp',
             },
           ],
         },
@@ -145,34 +107,6 @@ const data = {
           ],
         },
 
-        /* {
-          name: 'CNC cutting services',
-          slug: 'CNC',
-          key: 'cnc',
-          image: '/images/c2s-thump.webp',
-          pics: [
-            {
-              key: 'c2s-3',
-              image: '/images/c2s-3.webp',
-            },
-            {
-              key: 'c2s-4',
-              image: '/images/c2s-4.webp',
-            },
-            {
-              key: 'c2s-6',
-              image: '/images/c2s-6.webp',
-            },
-            {
-              key: 'c2s-7',
-              image: '/images/c2s-7.webp',
-            },
-            {
-              key: 'c2s-8',
-              image: '/images/c2s-8.webp',
-            },
-          ],
-        }, */
         {
           name: 'Cabinet Prefacing',
           slug: 'cabinetpreface',
@@ -242,31 +176,6 @@ const data = {
           image: '/images/van-1.webp',
         },
         {
-          name: 'van-2',
-          key: 'van-2',
-          image: '/images/van-2.webp',
-        },
-        {
-          name: 'van-3',
-          key: 'van-3',
-          image: '/images/van-8.webp',
-        },
-        {
-          name: 'van-4',
-          key: 'van-4',
-          image: '/images/van-4.webp',
-        },
-        {
-          name: 'van-5',
-          key: 'van-5',
-          image: '/images/van-5.webp',
-        },
-        {
-          name: 'van-6',
-          key: 'van-6',
-          image: '/images/van-6.webp',
-        },
-        {
           name: 'van-7',
           key: 'van-7',
           image: '/images/van-7.webp',
@@ -275,6 +184,21 @@ const data = {
           name: 'van-8',
           key: 'van-8',
           image: '/images/van-9.webp',
+        },
+        {
+          name: 'van-9',
+          key: 'van-9',
+          image: '/images/v-1.webp',
+        },
+        {
+          name: 'van-10',
+          key: 'van-10',
+          image: '/images/v-2.webp',
+        },
+        {
+          name: 'van-11',
+          key: 'van-11',
+          image: '/images/v-6.webp',
         },
       ],
       subServices: [
@@ -302,9 +226,9 @@ const data = {
       cover: '/images/cover-4.webp',
       description: {
         content1:
-          'While our name might suggest a specialization in kitchens, we offer a comprehensive range of services that extend far beyond that. From wardrobes and storage units to garages and beyond, we are dedicated to helping you transform your living spaces with tailor-made creations.',
+          'While our name might suggest a specialisation in kitchens, we offer a comprehensive range of services that extend far beyond that. From wardrobes and storage units to garages and beyond, we are dedicated to helping you transform your living spaces with tailor-made creations.',
         content2:
-          ' We understand that every customer has unique requirements and preferences, which is why we prioritize personalized solutions that reflect your individual style and functional needs.',
+          ' We understand that every customer has unique requirements and preferences, which is why we prioritise personalised solutions that reflect your individual style and functional needs.',
       },
       subServices: [
         {
@@ -324,6 +248,10 @@ const data = {
             {
               key: 'tv-3',
               image: '/images/tv-3.jpg',
+            },
+            {
+              key: 'tv-4',
+              image: '/images/tv-4.webp',
             },
           ],
         },
@@ -420,9 +348,9 @@ const data = {
       cover: '/images/cover-3.webp',
       description: {
         content1:
-          'If you are home designer, handyman, renovator or just a DIY homeowner, flatpacked cupboards are the perfect solution to make your work so much simpler and easier while saving you heaps of money for your project.',
+          'If you are a home designer, handyman, renovator or just a DIY homeowner, Flatpacked cupboards are the perfect solution to make your work so much simpler and easier while saving your money for your project.',
         content2:
-          'Unlikely to many other suppliers, Kenny Kitchen supplies cabinets with the customised size. That means you can build your cabinetry whatever size that suits your space. All you need is making a correct measurement for the space available, and we will take care the rest.',
+          'Unlikely to many other suppliers, Kenny Kitchen supplies cabinets to your customised size. That means you can build your cabinetry whatever size that suits your space. All you need are correct measurements for the space available, and we will take care the rest.',
       },
       sub_images: [
         { name: 'fb-1', key: 'fb-1', image: '/images/fp-1.webp' },
@@ -464,6 +392,7 @@ const data = {
       ],
       key: 'custom',
       image: '/images/c-c.jpg',
+
       content:
         'Perfect Kitchens’ specialist cabinet makers and designers will let you achieve that unique custom touch to make your home truly yours',
     },
@@ -482,22 +411,27 @@ const data = {
         {
           name: 'sto-1',
           key: 'sto-1',
-          image: '/images/kit-26.jpg',
+          image: '/images/ds-1.webp',
         },
         {
           name: 'sto-2',
           key: 'sto-2',
-          image: '/images/kit-25.jpg',
+          image: '/images/ds-2.webp',
         },
         {
           name: 'sto-3',
           key: 'sto-3',
-          image: '/images/kit-24.jpg',
+          image: '/images/ds-3.webp',
         },
         {
           name: 'sto-4',
           key: 'sto-4',
-          image: '/images/kit-23.jpg',
+          image: '/images/ds-4.webp',
+        },
+        {
+          name: 'sto-5',
+          key: 'sto-5',
+          image: '/images/ds-5.webp',
         },
       ],
       subServices: [],
@@ -512,9 +446,9 @@ const data = {
       cover: '/images/cover-4.webp',
       description: {
         content1:
-          'Kenny Kitchen equipped the latest technology of woodworking machinery, we offer you CNC cutting, routering, drilling and edging, etc. for all kinds of cabinetry needs with an affordable price starting from $50 per sheet. All panels are labelled, pre-drilled for quick, efficient and easy assembly.',
+          'Kenny Kitchen is equipped the latest technology of woodworking machinery, We offer CNC cutting, routering, drilling and edging, etc. for all kinds of cabinetry needs with an affordable price starting from $50 per sheet. All panels are labelled, pre-drilled for quick, efficient and easy assembly.',
         content2:
-          'Let send us the plan with the details of doors profile, hinges, etc. to get a quote for our service.',
+          'Send us your plan with the details to get a quote for our service.',
       },
       sub_images: [
         {

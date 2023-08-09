@@ -13,12 +13,12 @@ export default function Services() {
   return (
     <div className="services  mt-[100px] mb-[100px] " id="service_section">
       <h1 className="h1-primary min-[320px]:text-[18px] text-slate-700 ">
-        OUR SERVICVE
+        OUR SERVICE
       </h1>
       <p className="text-primary min-[320px]:text-[16px] mb-[50px] font-poppinsbold">
-        Perfect Kitchens provide a full range of services covering everything
-        you need to create a beautiful new kitchen. Select a service below to
-        find out more.
+        Kenny Kitchens provide a full range of services covering everything you
+        need to create a beautiful new kitchen. Select a service below to find
+        out more.
       </p>
       {/* services-cards */}
       <div className=" grid mt-4  gap-y-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:justify-self-center lg:justify-items-center  sm:justify-self-center sm: justify-items-center">

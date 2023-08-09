@@ -10,7 +10,7 @@ export default function About() {
       id="about_section"
     >
       <h1 className="h1-primary sm:text-[30px] text-[25px] text-gray-800">
-        Creating Perfect Kitchen In Sydney
+        Creating Perfect Kitchens In Sydney
       </h1>
       {/* <div className="container flex justify-around flex-col md:flex-row sm:justify-center sm:items-center lg:flex-row">
         {data.about_images.map((image, key) => (
