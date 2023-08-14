@@ -70,6 +70,22 @@ const data = {
               key: 'nk11',
               image: '/images/kc-11.webp',
             },
+            {
+              key: 'nk13',
+              image: '/images/kc-13.webp',
+            },
+            {
+              key: 'nk14',
+              image: '/images/kc-14.webp',
+            },
+            {
+              key: 'nk15',
+              image: '/images/kc-15.webp',
+            },
+            {
+              key: 'nk16',
+              image: '/images/kc-16.webp',
+            },
           ],
         },
         {
