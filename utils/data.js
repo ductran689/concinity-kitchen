@@ -24,7 +24,7 @@ const data = {
           name: 'New Kitchen',
           slug: 'new_kitchen',
           key: 'newkitchen',
-          image: '/images/kc-11.webp',
+          image: '/images/kc-15.webp',
           pics: [
             {
               key: 'nk1',

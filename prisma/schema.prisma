@@ -7,7 +7,56 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model About {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
+model services {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  slug  String
+  cover String
+  key String
+  image String
+  sub_images  sub_images[]
+  subServices subServices[]
+  slider slider[]
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  
 }
 
+model subServices{
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  subServicesId String @db.ObjectId
+  service services @relation(fields: [subServicesId], references: [id])
+name  String
+slug  String
+key String
+images  String
+pics  pics[]
+}
+
+model sub_images{
+id     String @id @default(auto()) @map("_id") @db.ObjectId
+  sub_imagesId String @db.ObjectId
+  sub_image services @relation(fields: [sub_imagesId], references: [id])
+  name  String
+  key String
+  image String
+}
+
+model pics{
+id     String @id @default(auto()) @map("_id") @db.ObjectId
+  picsId String @db.ObjectId
+  pics subServices @relation(fields: [picsId], references: [id])
+}
+
+
+model slider{
+id     String @id @default(auto()) @map("_id") @db.ObjectId
+  sliderId String @db.ObjectId
+  slider services @relation(fields: [sliderId], references: [id])
+  name   String
+  img_1 String
+  img_2 String
+  key String
+  location  String
+
+}
